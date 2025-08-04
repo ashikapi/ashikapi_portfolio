@@ -23,7 +23,7 @@ const Header = () => {
           <li><a href="#services">Services</a></li>
           <li><a href="#skill">My Skills</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#resume">My Resume</a></li>
+          <li><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a className='px-4 py-2 bg-green-600 hover:bg-green-900 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a></li>

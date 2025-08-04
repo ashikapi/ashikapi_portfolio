@@ -60,7 +60,7 @@ const AboutMe = () => {
             </div>
                   <div className="pt-8">
               <a
-                href="/Md. Ashikur Rahaman Api_Resume1.pdf"
+                href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" // CV link
                 download
                 onClick={handleDownload}
               >
