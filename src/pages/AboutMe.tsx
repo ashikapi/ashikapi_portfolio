@@ -3,7 +3,7 @@ import { FaDownload } from "react-icons/fa";
 import { useState } from "react";
 
 const AboutMe = () => {
-    const [downloaded, setDownloaded] = useState(false);
+  const [downloaded, setDownloaded] = useState(false);
 
   const handleDownload = () => {
     setDownloaded(true);
@@ -12,9 +12,9 @@ const AboutMe = () => {
   return (
     <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-20 bg-[rgb(248,250,252)]">
       <div className="w-full max-w-7xl">
-        
+
         {/* Heading */}
-         <div className="flex justify-center items-center pt-20 mb-20">
+        <div className="flex justify-center items-center pt-20 mb-20">
           <h1 className="">
             <span className="text-xl sm:text-2xl font-semibold text-black">Get To Know More</span>
             <span className="text-4xl sm:text-5xl font-extrabold text-[rgb(0,150,137)]"> About </span>
@@ -32,7 +32,7 @@ const AboutMe = () => {
 
         {/* Main Content */}
         <div className='flex flex-col lg:flex-row items-center justify-evenly gap-10'>
-          
+
           {/* Image */}
           <div className="flex justify-center">
             <img
@@ -58,16 +58,15 @@ const AboutMe = () => {
                 Built multiple full-stack projects using MERN, implemented user auth, admin dashboards, and chatbot systems.
               </p>
             </div>
-                  <div className="pt-8">
+            <div className="pt-8">
               <a
                 href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" // CV link
                 download
                 onClick={handleDownload}
               >
                 <button
-                  className={`flex justify-evenly items-center gap-2 lg:px-6 lg:py-3 md:px-4 md:py-2 px-4 py-2 border mb-2 text-white rounded-2xl lg:font-bold md:font-bold font-semibold text-lg animate-bounce duration-1000 hover:bg-red-700 ${
-                    downloaded ? "bg-green-600" : "bg-red-500"
-                  }`}
+                  className={`flex justify-evenly items-center gap-2 lg:px-6 lg:py-3 md:px-4 md:py-2 px-4 py-2 border mb-2 text-white rounded-2xl lg:font-bold md:font-bold font-semibold text-lg animate-bounce duration-1000 hover:bg-red-700 ${downloaded ? "bg-green-600" : "bg-red-500"
+                    }`}
                 >
                   <FaDownload />
                   {downloaded ? "Downloaded!" : "Download CV"}
@@ -76,7 +75,7 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   )

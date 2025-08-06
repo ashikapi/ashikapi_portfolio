@@ -40,7 +40,7 @@ const Home = () => {
                                     "MS Office Expert .",
                                     "MySQL & PHP Developer ."
                                 ]
-                                }
+                            }
                             loop={true}
                             cursor
                             cursorStyle="|"
@@ -60,30 +60,40 @@ const Home = () => {
                         rounded-md hover:bg-gray-800 transform hover:transition hover:scale-110 duration-150'>View Work</button>
                     </div>
                     {/* find me in button */}
-                     <div className='flex justify-between mt-2 mb-6'>
-                    <div className='lg:mt-8 animate__animated animate__fadeInUp animate__delay-6s'>
-                        <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase '>Find Me In</h1>
-                        <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
-                            <button className='p-2 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><a target='_blanck' href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a></button>
-                            <button className='p-2 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><a target='_blank' href=""><FaTwitter /></a></button>
-                            <button className='p-2 bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><a target='_blank' href="https://www.linkedin.com/in/ashik-api-767765341"><FaLinkedinIn /></a></button>
-                            <button className='p-2 bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><a target='_blank' href="https://github.com/ashikapi"><FaGithubSquare /></a></button> 
+                    <div className='flex justify-between mt-2 mb-6'>
+                        <div className='lg:mt-8 animate__animated animate__fadeInUp animate__delay-6s'>
+                            <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase '>Find Me In</h1>
+                            <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
+                                <button className='p-2 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                    <a target='_blanck' href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
+                                </button>
+                                <button className='p-2 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                    <a target='_blank' href=""><FaTwitter /></a>
+                                </button>
+                                <button className='p-2 bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                    <a target='_blank' href="https://www.linkedin.com/in/ashik-api-767765341"><FaLinkedinIn /></a>
+                                </button>
+                                <button className='p-2 bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                    <a target='_blank' href="https://github.com/ashikapi"><FaGithubSquare /></a>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div className='lg:mt-8 animate__animated animate__fadeInUp animate__delay-7s'>
-                        <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase'>Best Skill On</h1>
-                        <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
-                            <button className='p-2 bg-black text-blue-300 shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiReactjsLine /></button>
-                            <button className='p-2 bg-black text-[#3C873A] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><FaNodeJs /></button>
-                            <button className='p-2 bg-black text-blue-400 shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiTailwindCssFill /></button>
-                            <button className='p-2 bg-black text-[#F06529] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><SiHtml5 /></button>
+                        <div className='lg:mt-8 animate__animated animate__fadeInUp animate__delay-7s'>
+
+                            <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase'>Best Skill On</h1>
+                            <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
+                                <button className='p-2 bg-black text-blue-300 shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiReactjsLine /></button>
+                                <button className='p-2 bg-black text-[#3C873A] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><FaNodeJs /></button>
+                                <button className='p-2 bg-black text-blue-400 shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiTailwindCssFill /></button>
+                                <button className='p-2 bg-black text-[#F06529] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><SiHtml5 /></button>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
-                <div className=' flex items-center justify-center p-1 md:ml-0 md:mr-0 ml-8 mr-8 rounded-xl bg-gradient-to-tr from-cyan-400 via-yellow-200 to-orange-500'>
+                <div className=' flex items-center justify-center p-1 md:ml-0 md:mr-0 ml-8
+                 mr-8 rounded-xl bg-gradient-to-tr from-cyan-400 via-yellow-200 to-orange-500'>
                     <div className="bg-[#1e293b] p-2 rounded-2xl">
-                    <img className='w-80 rounded-xl ' src={profileashik} alt="Profile Image" /></div></div>
+                        <img className='w-80 rounded-xl ' src={profileashik} alt="Profile Image" /></div></div>
             </div>
         </div>
     )

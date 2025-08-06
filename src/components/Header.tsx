@@ -18,24 +18,24 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <div>
-        <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
-          <li className='hover:text-[rgb(0,150,137)]'><a className='' href="#home">Home</a></li>
-          <li className='hover:text-[rgb(0,150,137)]'><a href="#aboutme">About Me</a></li>
-          <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li>
-          <li className='hover:text-[rgb(0,150,137)]'><a href="#skill">My Skills</a></li>
-          <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li>
-          <li className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
-          <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li>
-          <li className='hover:text-[rgb(0,150,137)]'><a href="#contact">Contact</a></li>
-        </ul>
+          <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
+            <li className='hover:text-[rgb(0,150,137)]'><a className='' href="#home">Home</a></li>
+            <li className='hover:text-[rgb(0,150,137)]'><a href="#aboutme">About Me</a></li>
+            <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li>
+            <li className='hover:text-[rgb(0,150,137)]'><a href="#skill">My Skills</a></li>
+            <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li>
+            <li className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
+            <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li>
+            <li className='hover:text-[rgb(0,150,137)]'><a href="#contact">Contact</a></li>
+          </ul>
         </div>
         <div>
           <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
-          <li>
-            <a className='px-4 py-2 bg-[rgb(0,150,137)] hover:bg-green-900 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
+            <li>
+              <a className='px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
             </li>
-            </ul>
-          </div>
+          </ul>
+        </div>
 
         {/* Mobile Menu Button */}
         <div className='md:hidden text-2xl text-white mr-2' onClick={() => setMenuOpen(!menuOpen)}>
@@ -57,7 +57,7 @@ const Header = () => {
           <li>
             <a
               onClick={() => setMenuOpen(false)}
-              className='block text-center mt-2 px-4 py-2 bg-green-600 hover:bg-green-900 rounded-3xl uppercase'
+              className='block text-center mt-2 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase'
               href="#contact"
             >
               Hire Me
