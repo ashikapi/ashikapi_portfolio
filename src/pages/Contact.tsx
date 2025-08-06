@@ -18,7 +18,7 @@ const Contact = () => {
         <div className='flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-20 bg-[rgb(15,23,43)] pb-8'>
             <div className='w-full max-w-7xl'>
                 <div>
-                    <h1 className='lg:ml-52 lg:mb-10 mb-5'>
+                    <h1 className='lg:ml-100 lg:mb-10 mb-5'>
                         <span className='uppercase text-white lg:text-3xl md:text-2xl sm:text-xl text-lg font-semibold'>Get In Touch </span>
                         <span className='lg:text-6xl md:text-4xl sm:text-3xl text-4xl text-[rgb(0,213,190)] font-extrabold'>Contact</span>
                         <span className='lg:text-6xl text-4xl text-[rgb(0,213,190)] font-extrabold'> Me</span>
