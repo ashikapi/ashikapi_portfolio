@@ -10,15 +10,15 @@ const AboutMe = () => {
     setTimeout(() => setDownloaded(false), 3000); // 3s por abar red e ashbe
   };
   return (
-    <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-20">
+    <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-20 bg-[rgb(248,250,252)]">
       <div className="w-full max-w-7xl">
         
         {/* Heading */}
          <div className="flex justify-center items-center pt-20 mb-20">
           <h1 className="">
             <span className="text-xl sm:text-2xl font-semibold text-black">Get To Know More</span>
-            <span className="text-4xl sm:text-5xl font-extrabold text-black"> About </span>
-            <span className="text-4xl sm:text-5xl text-[rgb(108,99,255)] font-extrabold">
+            <span className="text-4xl sm:text-5xl font-extrabold text-[rgb(0,150,137)]"> About </span>
+            <span className="text-4xl sm:text-5xl text-[rgb(0,150,137)] font-extrabold">
               Me
             </span>
           </h1>
@@ -44,7 +44,7 @@ const AboutMe = () => {
 
           {/* Info Text */}
           <div className='text-center lg:text-left max-w-2xl'>
-            <h1 className='text-2xl sm:text-3xl md:text-4xl text-purple-600 font-extrabold mb-4'>
+            <h1 className='text-2xl sm:text-3xl md:text-4xl text-[rgb(0,150,137)] font-extrabold mb-4'>
               Who am I?
             </h1>
             <p className='text-base sm:text-lg md:text-xl text-gray-500'>
@@ -53,7 +53,7 @@ const AboutMe = () => {
 
             {/* Experience Section */}
             <div className="mt-6">
-              <h2 className="text-lg sm:text-xl font-bold text-purple-600 mb-2">Experience</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-black mb-2">Experience</h2>
               <p className="text-sm sm:text-base text-gray-500">
                 Built multiple full-stack projects using MERN, implemented user auth, admin dashboards, and chatbot systems.
               </p>

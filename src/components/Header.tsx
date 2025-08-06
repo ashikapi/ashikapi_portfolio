@@ -6,28 +6,36 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className='w-full p-4 bg-gray-400 fixed top-0 left-0 z-10'>
-      <div className='flex justify-between items-center'>
+    <div className='w-full p-4 bg-slate-900 fixed top-0 left-0 z-10'>
+      <div className='md:flex md:justify-evenly flex justify-between items-center '>
         {/* Logo & Name */}
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center gap-3'>
           <img className='w-9 h-10 rounded-full ring-2 ring-green-300' src={profileimage} alt="logo" />
-          <h1 className='text-2xl md:text-4xl text-[rgb(47,46,65)] font-bold italic uppercase'>
-            Ashik Api <span className='text-purple-400'>.</span>
+          <h1 className='text-xl md:text-4xl text-[rgb(0,213,190)] font-bold uppercase'>
+            Ashik Api <span className=''>.</span>
           </h1>
         </div>
 
         {/* Desktop Menu */}
-        <ul className='hidden md:flex justify-evenly items-center text-white font-semibold text-lg list-none gap-6 mr-4'>
-          <li><a className='hover:border-b-2 border-purple-500 hover:text-purple-800' href="#home">Home</a></li>
-          <li><a href="#aboutme">About Me</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#skill">My Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a className='px-4 py-2 bg-green-600 hover:bg-green-900 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a></li>
+        <div>
+        <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
+          <li className='hover:text-[rgb(0,150,137)]'><a className='' href="#home">Home</a></li>
+          <li className='hover:text-[rgb(0,150,137)]'><a href="#aboutme">About Me</a></li>
+          <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li>
+          <li className='hover:text-[rgb(0,150,137)]'><a href="#skill">My Skills</a></li>
+          <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li>
+          <li className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
+          <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li>
+          <li className='hover:text-[rgb(0,150,137)]'><a href="#contact">Contact</a></li>
         </ul>
+        </div>
+        <div>
+          <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
+          <li>
+            <a className='px-4 py-2 bg-[rgb(0,150,137)] hover:bg-green-900 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
+            </li>
+            </ul>
+          </div>
 
         {/* Mobile Menu Button */}
         <div className='md:hidden text-2xl text-white mr-2' onClick={() => setMenuOpen(!menuOpen)}>
