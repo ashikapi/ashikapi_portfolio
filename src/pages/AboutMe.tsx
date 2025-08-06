@@ -10,11 +10,11 @@ const AboutMe = () => {
     setTimeout(() => setDownloaded(false), 3000); // 3s por abar red e ashbe
   };
   return (
-    <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-20 bg-[rgb(248,250,252)]">
+    <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(248,250,252)]">
       <div className="w-full max-w-7xl">
 
         {/* Heading */}
-        <div className="flex justify-center items-center pt-20 mb-20">
+        <div className="flex justify-center items-center lg:pt-20 lg:mb-20 pt-5 mb-10">
           <h1 className="">
             <span className="text-xl sm:text-2xl font-semibold text-black">Get To Know More</span>
             <span className="text-4xl sm:text-5xl font-extrabold text-[rgb(0,150,137)]"> About </span>

@@ -15,10 +15,10 @@ const contactInfo = [
 
 const Contact = () => {
     return (
-        <div className='flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-20 bg-[rgb(15,23,43)] pb-8'>
+        <div className='flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(15,23,43)] pb-8 pt-8'>
             <div className='w-full max-w-7xl'>
                 <div>
-                    <h1 className='lg:ml-100 lg:mb-10 mb-5'>
+                    <h1 className='lg:ml-100 lg:mb-10 ml-5 mb-5'>
                         <span className='uppercase text-white lg:text-3xl md:text-2xl sm:text-xl text-lg font-semibold'>Get In Touch </span>
                         <span className='lg:text-6xl md:text-4xl sm:text-3xl text-4xl text-[rgb(0,213,190)] font-extrabold'>Contact</span>
                         <span className='lg:text-6xl text-4xl text-[rgb(0,213,190)] font-extrabold'> Me</span>
@@ -57,9 +57,9 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mr-10 animate__animated animate__fadeInRight p-10 bg-[rgb(30,41,57)] rounded-2xl'>
-                        <form action="submit">
-                            <div className='lg:space-x-4 space-x-2 mt-5 mb-2 flex justify-evenly'>
+                    <div className='flex justify-center items-center mr-10 animate__animated animate__fadeInRight lg:p-10 lg:bg-[rgb(30,41,57)] rounded-2xl'>
+                        <form action="submit" className="flex justify-center items-center flex-col md:ml-0 ml-10">
+                            <div className='lg:space-x-4 space-x-4 mt-5 mb-2 flex justify-evenly'>
 
                                 <label><input required type="text" className='border-none lg:p-4 lg:w-[280px] w-[170px] h-[60px] px-9 py-4 text-left bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-teal-400 text-white' placeholder='Your Name' /></label>
                                 <label><input required type="email" className='border-none lg:p-4 lg:w-[280px] w-[170px] h-[60px] px-9 py-4 text-left  bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-teal-400 text-white' placeholder='Your Email' /></label>
