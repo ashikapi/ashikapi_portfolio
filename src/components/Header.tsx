@@ -11,14 +11,14 @@ const Header = () => {
         {/* Logo & Name */}
         <div className='flex items-center gap-3'>
           <img className='w-9 h-10 rounded-full ring-2 ring-green-300' src={profileimage} alt="logo" />
-          <h1 className='text-xl md:text-4xl text-[rgb(0,213,190)] font-bold uppercase'>
+          <h1 className='text-xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
             Ashik Api <span className=''>.</span>
           </h1>
         </div>
 
         {/* Desktop Menu */}
         <div>
-          <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
+          <ul className='hidden lg:flex justify-evenly items-center text-slate-50 font-semibold lg:text-lg text-sm list-none gap-6 mr-4'>
             <li className='hover:text-[rgb(0,150,137)]'><a className='' href="#home">Home</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#aboutme">About Me</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li>
@@ -30,7 +30,7 @@ const Header = () => {
           </ul>
         </div>
         <div>
-          <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
+          <ul className='hidden lg:flex justify-evenly items-center text-slate-50 font-semibold text-lg list-none gap-6 mr-4'>
             <li>
               <a className='px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
             </li>
@@ -38,14 +38,14 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className='md:hidden text-2xl text-white mr-2' onClick={() => setMenuOpen(!menuOpen)}>
+        <div className='lg:hidden text-2xl text-white mr-2' onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <ul className='md:hidden flex flex-col bg-gray-600 mt-4 rounded-lg text-white font-semibold text-base list-none p-4 gap-3'>
+        <ul className='lg:hidden flex flex-col bg-gray-600 mt-4 rounded-lg text-white font-semibold text-base list-none p-4 gap-3'>
           <li><a onClick={() => setMenuOpen(false)} href="#home">Home</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#aboutme">About Me</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#services">Services</a></li>

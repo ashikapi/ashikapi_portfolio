@@ -90,7 +90,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' flex items-center justify-center p-1 md:ml-0 md:mr-0 ml-8
+                <div className=' flex items-center justify-center p-1 lg:ml-0 lg:mr-0 md:ml-60 md:mr-60 sm:ml-50 sm:mr-50 ml-8
                  mr-8 rounded-xl bg-gradient-to-tr from-cyan-400 via-yellow-200 to-orange-500'>
                     <div className="bg-[#1e293b] p-2 rounded-2xl">
                         <img className='w-80 rounded-xl ' src={profileashik} alt="Profile Image" /></div></div>

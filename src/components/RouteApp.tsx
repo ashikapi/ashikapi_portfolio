@@ -6,6 +6,7 @@ import Header from './Header';
 import Hero from './Hero';
 import Skills from '../pages/Skills';
 import Contact from '../pages/Contact';
+import FeaturedProjects from '../pages/FeaturedProjects';
 
 const RouteApp = () => {
   return (
@@ -17,6 +18,7 @@ const RouteApp = () => {
         <Route path='/hero'element={<Hero/>}/>
         <Route path='/skill'element={<Skills/>}/>
         <Route path='/contact'element={<Contact/>}/>
+        <Route path='/featuredprojects' element={<FeaturedProjects/>} />
       </Route>
     </Routes>
   );
