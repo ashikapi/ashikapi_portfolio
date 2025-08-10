@@ -56,8 +56,8 @@ const Home = () => {
                     <div className='lg:mt-8 lg:flex lg:justify-evenly grid grid-cols-2 lg:space-x-0 space-x-6 mt-4 animate__animated animate__fadeInUp animate__delay-5s'>
                         <button className='lg:px-4 lg:py-3 px-3 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 text-white font-bold 
                          text-lg rounded-md transform hover:transition hover:scale-110 duration-150'>Get In Touch</button>
-                        <button className='lg:px-6 lg:py-2 px-3 py-2 text-lg border-gray-600 bg-gray-800 lg:bg-[rgb(255,255,255)] font-bold text-white border-2 hover:border-gray-600 
-                        rounded-md hover:bg-gray-800 transform hover:transition hover:scale-110 duration-150'><a href="#project">View Work</a></button>
+                        <a href="#project"><button className='lg:px-6 lg:py-2 px-3 py-2 text-lg border-gray-600 bg-gray-800 lg:bg-[rgb(255,255,255)] font-bold text-white border-2 hover:border-gray-600 
+                        rounded-md hover:bg-gray-800 transform hover:transition hover:scale-110 duration-150'>View Work</button></a>
                     </div>
                     {/* find me in button */}
                     <div className='flex justify-between mt-2 mb-6'>
