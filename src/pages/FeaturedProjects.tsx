@@ -1,4 +1,3 @@
-import React from 'react'
 import { TbWindowMinimize } from "react-icons/tb";
 
 const featuredetails = [
