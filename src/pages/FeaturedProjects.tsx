@@ -4,27 +4,27 @@ const featuredetails = [
   {
     title: 'DigiKart – Gift Card & Game Top-Up Platform',
 Description: 'Dynamic gift card platform featuring OTP login and SSLCommerz checkout.',
-Tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'PHPMailer']
+Tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'Java Script', 'PHP Mailer']
   },
   {
     title: 'HRMS – Human Resource Management System',
 Description: 'Internship project for HR Management UI using React & Tailwind CSS.',
-Tech: ['React', 'TypeScript', 'Tailwind CSS']
+Tech: ['React', 'Type Script', 'Tailwind CSS']
   },
   {
     title: 'Fashion--House (Online Shop)',
     Description: 'Modern fashion e-commerce UI with responsive design.',
-    Tech: ['HTML', 'CSS', 'Tailwind CSS']
+    Tech: ['React', 'Type Script', 'Tailwind CSS']
   },
   {
    title: 'Farmer Ecommerce Frontend',
 Description: 'Responsive product listing UI for agricultural e-commerce.',
-Tech:[ 'HTML', 'CSS', 'JavaScript']
+Tech:['React', 'Type Script', 'Tailwind CSS']
   },
   {
     title: 'Digital Agency Landing Page',
 Description: 'Single page landing site with scroll animation & responsive layout.',
-Tech:[ 'HTML', 'CSS', 'JavaScript']
+Tech:[ 'HTML', 'CSS']
   }
 ]
 
