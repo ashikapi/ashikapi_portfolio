@@ -11,7 +11,7 @@ const Header = () => {
         {/* Logo & Name */}
         <div className='flex items-center lg:gap-3 md:gap-2 gap-3 md:mr-1'>
           <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={profileimage} alt="logo" />
-          <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-xl sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
+          <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
             Ashik Api <span className=''>.</span>
           </h1>
         </div>
@@ -30,7 +30,7 @@ const Header = () => {
           </ul>
         </div>
         <div>
-          <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold lg:text-lg md:text-sm text-lg list-none gap-6 lg:mr-4 md:ml-2'>
+          <ul className='hidden lg:flex justify-evenly items-center text-slate-50 font-semibold lg:text-lg md:text-sm text-lg list-none gap-6 lg:mr-4 md:ml-2'>
             <li>
               <a className='lg:px-4 lg:py-2 md:px-2 md:py-1 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
             </li>

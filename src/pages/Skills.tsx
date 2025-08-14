@@ -49,8 +49,8 @@ const Skills = () => {
                         </h1>
                     </div>
                 </div>
-                <div className='md:flex md:justify-evenly md:items-center gap-20'>
-                    <div className='lg:ml-20 ml-2 mr-2'>
+                <div className='md:flex md:justify-evenly md:items-center lg:gap-6 gap-20'>
+                    <div className='xl:ml-20 lg:ml-10 ml-2 mr-2'>
                         <div className='flex justify-evenly'>
                             <div>
                                 <h1 className='lg:text-3xl md:text-2xl sm:text-xl text-xl font-semibold mb-3'>Technical Proficiencies</h1>
@@ -58,8 +58,8 @@ const Skills = () => {
                         </div>
                         <ul className='grid grid-cols-2 xl:p-4 lg:p-2 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl'>
                             {technicalSkills.map((skills, index) => (
-                                <li className='grid grid-cols-2 items-center gap-10 xl:gap-10 md:gap-20 xl:px-10 xl:py-6 lg:px-1 lg:py-6 md:py-6 lg:pr-0 md:pr-16 px-2 py-2 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 lg:ml-4 lg:mr-4 ml-2 mr-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-150' key={index}>
-                                    <label className='px-2 py-2 xl:pl-5 xl:pr-12 lg:pl- md:pl-2 md:pr-10 pl-3.5 rounded-lg md:text-3xl sm:text-2xl text-xl bg-black shadow-2xl shadow-white'>{skills.icon}</label>
+                                <li className='grid grid-cols-2 items-center gap-10 xl:gap-10 lg:gap-10 md:gap-20 xl:px-10 xl:py-6 lg:px-1 lg:py-6 md:py-6 md:pr-16 px-2 py-2 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 xl:ml-4 xl:mr-4 lg:pl-3 lg:pr-16 ml-2 mr-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-150' key={index}>
+                                    <label className='px-2 py-2 xl:pl-5 xl:pr-12 lg:pl-2 lg:pr- md:pl-2 md:pr-10 pl-3.5 rounded-lg md:text-3xl sm:text-2xl text-xl bg-black shadow-2xl shadow-white'>{skills.icon}</label>
                                     <label className='md:font-bold font-semibold text-lg -ml-5'>{skills.name}</label>
                                 </li>
                             ))}
@@ -72,7 +72,7 @@ const Skills = () => {
                                 <h1 className='lg:text-3xl md:text-2xl sm:text-xl text-xl font-semibold mb-3 mt-6'>Professional & Creative Skills</h1>
                                 <p className='mb-6 sm:text-lg opacity-45 font-semibold'>Complementary abilities that enhance project execution:</p>
                             </div>
-                            <ul className='lg:grid lg:grid-cols-2 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl'>
+                            <ul className='xl:grid xl:grid-cols-2 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl'>
                                 {creativeSkills.map((Tskills, index) => (
                                     <li
                                         key={index}
