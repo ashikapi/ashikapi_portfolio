@@ -45,7 +45,7 @@ const FeaturedProjects = () => {
                 <button key={index} className='px-2 py-1 bg-[rgb(203,251,241)] rounded-md'>{tech}</button>
                   ))}
                 </div>
-                <button className='flex justify-center items-center text-center mt-10 w-full p-2 border border-[rgb(90,185,177)] text-[rgb(8,157,153)] rounded-xl gap-4 text-xl'><TbWindowMinimize /> Visit Now</button>
+                <button className='flex justify-center items-center text-center mt-10 w-full p-2 border border-[rgb(90,185,177)] text-[rgb(8,157,153)] rounded-xl gap-4 text-xl hover:bg-teal-50 hover:text-black font-semibold'><TbWindowMinimize /> Visit Now</button>
                 </div>
                 ))}
             </div>

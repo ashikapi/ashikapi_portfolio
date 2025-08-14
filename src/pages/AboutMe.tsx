@@ -36,7 +36,7 @@ const AboutMe = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              className='w-64 sm:w-80 md:w-96 rounded-3xl shadow-2xl shadow-gray-400'
+              className='xl:w-96 lg:w-full w-64 rounded-3xl shadow-2xl shadow-gray-400'
               src={ashikapi}
               alt="Ashik Api"
             />

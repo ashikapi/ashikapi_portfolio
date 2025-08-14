@@ -17,13 +17,13 @@ const Home = () => {
             <div className='lg:flex lg:justify-evenly lg:items-center'>
                 <div className=' animate__animated animate__fadeInLeft animate__delay-1s'>
                     <div className='mb-2'>
-                        <h1 className=' md:text-xl sm:text-lg text-lg text-[rgb(3,204,184)]'>Hello, I am</h1>
+                        <h1 className=' md:text-xl sm:text-lg text-lg lg:text-left md:text-center text-[rgb(3,204,184)]'>Hello, I am</h1>
                     </div>
                     <div className='mb-2'>
-                        <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-lg text-white font-extrabold text-uppercase animate__animated animate__fadeInUp animate__delay-1s'>Md. Ashikur Rahaman Api</h2>
+                        <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:text-left md:text-center text-white font-extrabold text-uppercase animate__animated animate__fadeInUp animate__delay-1s'>Md. Ashikur Rahaman Api</h2>
                     </div>
                     <div>
-                        <h1 className='lg:text-3xl md:text-2xl sm:text-xl text-[rgb(198,208,220)] font-bold animate__animated animate__fadeInUp animate__delay-2s'><Typewriter
+                        <h1 className='lg:text-3xl md:text-2xl sm:text-xl lg:text-left md:text-center text-[rgb(198,208,220)] font-bold animate__animated animate__fadeInUp animate__delay-2s'><Typewriter
                             words={
                                 [
                                     "MERN Stack Developer .",
@@ -50,18 +50,18 @@ const Home = () => {
                         </h1>
                     </div>
                     <div className='mt-4 animate__animated animate__fadeInUp animate__delay-3s'>
-                        <p className='text-[rgb(140,155,148)] lg:text-lg md:text-lg sm:text-lg'>I transform ideas into smooth, secure, and scalable web solutions <br />using modern technologies and clean design.</p>
+                        <p className='text-[rgb(140,155,148)] lg:text-lg md:text-lg sm:text-lg lg:text-left md:text-center'>I transform ideas into smooth, secure, and scalable web solutions <br />using modern technologies and clean design.</p>
                     </div>
                     {/* getin touch and view work buttons */}
-                    <div className='lg:mt-8 lg:flex lg:justify-evenly grid grid-cols-2 lg:space-x-0 space-x-6 mt-4 animate__animated animate__fadeInUp animate__delay-5s'>
-                        <button className='lg:px-4 lg:py-3 px-3 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 text-white font-bold 
-                         text-lg rounded-md transform hover:transition hover:scale-110 duration-150'>Get In Touch</button>
-                        <a href="#project"><button className='lg:px-6 lg:py-2 px-10 py-2 text-lg border-gray-600 bg-gray-800 lg:bg-[rgb(255,255,255)] font-bold text-white border-2 hover:border-gray-600 
+                    <div className='lg:mt-8 md:flex md:justify-evenly grid grid-cols-2 lg:space-x-0 space-x-6 mt-4 animate__animated animate__fadeInUp animate__delay-5s'>
+                        <a href="mailto:ashikapi65@gmail.com"><button className='md:px-6 md:py-2.5 lg:px-4 lg:py-3 px-8 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 text-white font-bold 
+                         text-lg rounded-md transform hover:transition hover:scale-110 duration-150'>Get In Touch</button></a>
+                        <a href="#project"><button className='lg:px-6 lg:py-2 px-10 py-2 sm:ml-0 ml-5 text-lg border-gray-600 bg-gray-800 lg:bg-[rgb(255,255,255)] font-bold text-white border-2 hover:border-gray-600 
                         rounded-md hover:bg-gray-800 transform hover:transition hover:scale-110 duration-150'>View Work</button></a>
                     </div>
                     {/* find me in button */}
                     <div className='flex justify-between mt-2 mb-6'>
-                        <div className='lg:mt-8 animate__animated animate__fadeInUp animate__delay-6s'>
+                        <div className='lg:mt-8 lg:ml-0 md:ml-38 animate__animated animate__fadeInUp animate__delay-6s'>
                             <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase '>Find Me In</h1>
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
                                 <button className='p-2 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
@@ -78,7 +78,7 @@ const Home = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className='lg:mt-8 animate__animated animate__fadeInUp animate__delay-7s'>
+                        <div className='lg:mt-8 lg:mr-0 md:mr-36 animate__animated animate__fadeInUp animate__delay-7s'>
 
                             <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase'>Best Skill On</h1>
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>

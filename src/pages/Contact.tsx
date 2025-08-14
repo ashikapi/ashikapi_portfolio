@@ -18,7 +18,7 @@ const Contact = () => {
         <div className='flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(15,23,43)] pb-8 pt-8'>
             <div className='w-full max-w-7xl'>
                 <div>
-                    <h1 className='lg:ml-100 lg:mb-10 ml-5 mb-5'>
+                    <h1 className='xl:ml-100 lg:ml-25 lg:mb-10 ml-5 mb-5'>
                         <span className='uppercase text-white lg:text-3xl md:text-2xl sm:text-xl text-lg font-semibold'>Get In Touch </span>
                         <span className='lg:text-6xl md:text-4xl sm:text-3xl text-4xl text-[rgb(0,213,190)] font-extrabold'>Contact</span>
                         <span className='lg:text-6xl text-4xl text-[rgb(0,213,190)] font-extrabold'> Me</span>
@@ -30,7 +30,7 @@ const Contact = () => {
                             Fill out the form below or reach out through any of the contact methods.</p>
                     </div>
                 </div>
-                <div className='lg:flex lg:justify-between'>
+                <div className='lg:flex lg:justify-between xl:gap-0 lg:gap-6'>
                     <div className='w-96 animate__animated animate__fadeInLeft'>
                         <h1 className='lg:text-3xl text-xl text-white font-extrabold mb-2'>Let's Discuss Your Project</h1>
                         <p className="text-[rgb(135,154,173)]">I'm available for freelance work and would love to turn your ideas into reality.
@@ -57,7 +57,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex justify-center items-center mr-10 animate__animated animate__fadeInRight lg:p-10 lg:bg-[rgb(30,41,57)] rounded-2xl'>
+                    <div className='flex justify-center items-center mr-10 animate__animated animate__fadeInRight xl:p-10 lg:p-6 lg:bg-[rgb(30,41,57)] rounded-2xl'>
                         <form action="submit" className="flex justify-center items-center flex-col md:ml-0 ml-10">
                             <div className='lg:space-x-4 space-x-4 mt-5 mb-2 flex justify-evenly'>
 
