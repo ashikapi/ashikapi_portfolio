@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-[rgb(29,41,61)] text-[rgb(255,255,255)] py-10 mt-0 clip-footer">
       <div className="w-auto mx-auto px-4 lg:ml-[660px] lg:mt-40 md:ml-96  mt-20 ml-35">
-        <h2 className="md:text-3xl font-bold mb-2">Ashik Api.</h2>
+        <h2 className="md:text-3xl font-bold mb-2 sm:ml-0 ml-3">Ashik Api.</h2>
         <p className="text-[rgb(129,150,159)] lg:mb-6 lg:-ml-10 -ml-15">Web Developer & SEO Expeart</p>
 
         <div className='lg:mt-8 lg:-ml-6 mt-4 -ml-14'>
