@@ -6,7 +6,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const handleDownload = () => {
-    alert("CV Downloaded successfully");
+    alert("CV Downloaded successfully !");
   }
 
   return (
@@ -55,7 +55,7 @@ const Header = () => {
           <li><a onClick={() => setMenuOpen(false)} href="#services">Services</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#skill">My Skills</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#experience">Experience</a></li>
-          <li><a onClick={() => setMenuOpen(false)} href="#resume">My Resume</a></li>
+          <li onClick={handleDownload}><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#testimonials">Testimonials</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#contact">Contact</a></li>
           <li>

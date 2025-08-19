@@ -8,7 +8,7 @@ const AboutMe = () => {
   const handleDownload = () => {
     setDownloaded(true);
     setTimeout(() => setDownloaded(false), 3000); // 3s por abar red e ashbe
-    alert("CV Downloaded successfully"); // Alert message
+    alert("CV Downloaded successfully !"); // Alert message
   };
   return (
     <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(248,250,252)]">
