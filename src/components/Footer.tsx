@@ -32,7 +32,7 @@ const Footer = () => {
       <div className='flex justify-center items-center mt-5'>
         <div className=''>
           <div className="text-[rgb(136,147,162)]">© 2025 Ashik Api. All rights reserved.</div>
-          <div className='mt-5 space-x-4 ml-4 text-[rgb(136,147,162)] '>
+          <div className='mt-5 sm:mb-0 mb-5 space-x-4 ml-4 text-[rgb(136,147,162)] '>
             <button className="hover:text-teal-400"><a href="#home">Privacy Policy</a></button>
             <button className="hover:text-teal-400"><a href="#home">Terms of Service</a></button>
           </div>
