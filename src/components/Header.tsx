@@ -14,10 +14,13 @@ const Header = () => {
       <div className='md:flex md:justify-evenly flex justify-between items-center '>
         {/* Logo & Name */}
         <div className='flex items-center lg:gap-3 md:gap-2 gap-3 md:mr-1'>
-          <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={profileimage} alt="logo" />
+          <a href="#home">
+          <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={profileimage} alt="logo" /></a>
+          <a href="#home">
           <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
             Ashik Api <span className=''>.</span>
           </h1>
+          </a>
         </div>
 
         {/* Desktop Menu */}
