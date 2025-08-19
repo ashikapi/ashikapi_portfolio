@@ -8,6 +8,7 @@ const AboutMe = () => {
   const handleDownload = () => {
     setDownloaded(true);
     setTimeout(() => setDownloaded(false), 3000); // 3s por abar red e ashbe
+    alert("CV Downloaded successfully"); // Alert message
   };
   return (
     <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(248,250,252)]">
@@ -65,12 +66,15 @@ const AboutMe = () => {
                 onClick={handleDownload}
               >
                 <button
-                  className={`flex justify-evenly items-center gap-2 lg:px-6 lg:py-3 md:px-4 md:py-2 px-4 py-2 border mb-2 text-white rounded-2xl lg:font-bold md:font-bold font-semibold text-lg animate-bounce duration-1000 hover:bg-red-700 ${downloaded ? "bg-green-600" : "bg-red-500"
+                  className={`flex justify-evenly items-center gap-2 lg:px-6 lg:py-3 md:px-4 md:py-2 px-4 py-2 border mb-2
+                     text-white rounded-2xl lg:font-bold md:font-bold font-semibold text-lg animate-bounce duration-1000
+                      hover:bg-red-700 ${downloaded ? "bg-green-600" : "bg-red-500"
                     }`}
                 >
                   <FaDownload />
                   {downloaded ? "Downloaded!" : "Download CV"}
                 </button>
+                
               </a>
             </div>
           </div>

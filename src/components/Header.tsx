@@ -5,6 +5,10 @@ import profileimage from '../images/logo.png'
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const handleDownload = () => {
+    alert("CV Downloaded successfully");
+  }
+
   return (
     <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 left-0 z-10'>
       <div className='md:flex md:justify-evenly flex justify-between items-center '>
@@ -24,7 +28,7 @@ const Header = () => {
             <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#skill">My Skills</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li>
-            <li className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
+            <li onClick={handleDownload} className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api_Frontend-Developer_CV-Resume.pdf" download>My Resume</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#contact">Contact</a></li>
           </ul>
