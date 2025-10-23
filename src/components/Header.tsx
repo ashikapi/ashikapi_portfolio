@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import profileimage from '../images/logo.png'
+// import profileimage from '../images/logo.png'
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -15,7 +15,7 @@ const Header = () => {
         {/* Logo & Name */}
         <div className='flex items-center lg:gap-3 md:gap-2 gap-3 md:mr-1'>
           <a href="#home">
-          <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={profileimage} alt="logo" /></a>
+          <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src="https://i.postimg.cc/zXKzKsyp/logo.png" alt="Ashik" /></a>
           <a href="#home">
           <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
             Ashik Api <span className=''>.</span>

@@ -1,4 +1,4 @@
-import ashikapi from "../images/Ashik.jpg"
+// import ashikapi from "../images/Ashik.jpg"
 import { FaDownload } from "react-icons/fa";
 import { useState } from "react";
 
@@ -38,7 +38,7 @@ const AboutMe = () => {
           <div className="flex justify-center hover:-rotate-2 transform-3d transition-all duration-500">
             <img
               className='xl:w-96 lg:w-full w-64 rounded-3xl shadow-2xl shadow-gray-400'
-              src={ashikapi}
+              src="https://i.postimg.cc/02w4Qxbn/Api.jpg"
               alt="Ashik Api"
             />
           </div>
