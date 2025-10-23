@@ -58,7 +58,7 @@ const Skills = () => {
                         </div>
                         <ul className='grid grid-cols-2 xl:p-4 lg:p-2 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl'>
                             {technicalSkills.map((skills, index) => (
-                                <li className='grid grid-cols-2 items-center gap-10 xl:gap-10 lg:gap-10 md:gap-20 xl:px-10 xl:py-6 lg:px-1 lg:py-6 md:py-6 md:pr-16 px-2 py-2 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 xl:ml-4 xl:mr-4 lg:pl-3 lg:pr-16 ml-2 mr-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-150' key={index}>
+                                <li className='grid grid-cols-2 items-center gap-10 xl:gap-10 lg:gap-10 md:gap-20 xl:px-10 xl:py-6 lg:px-1 lg:py-6 md:py-6 md:pr-16 px-2 py-2 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 xl:ml-4 xl:mr-4 lg:pl-3 lg:pr-16 ml-2 mr-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-500' key={index}>
                                     <label className='px-2 py-2 xl:pl-5 xl:pr-12 lg:pl-2 lg:pr- md:pl-2 md:pr-10 pl-3.5 rounded-lg md:text-3xl sm:text-2xl text-xl bg-black shadow-2xl shadow-white'>{skills.icon}</label>
                                     <label className='md:font-bold font-semibold text-lg -ml-5'>{skills.name}</label>
                                 </li>
@@ -77,7 +77,7 @@ const Skills = () => {
                                     <li
                                         key={index}
                                         className='flex items-start gap-4 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 pb-4 ml-4 mr-4 
-                                        border-t-4 border-t-red-500 transform scale-100 p-4 max-w-[400px] min-h-[140px] transition delay-150 duration-300 
+                                        border-t-4 border-t-red-500 transform scale-100 p-4 max-w-[400px] min-h-[140px] transition delay-150 duration-500 
                                         ease-in-out hover:-translate-y-1 hover:scale-110 '>
                                         <div className='p-3 shadow-2xl shadow-white bg-black rounded-lg text-3xl text-blue-400 hover:text-orange-400'>
                                             {Tskills.icon}
