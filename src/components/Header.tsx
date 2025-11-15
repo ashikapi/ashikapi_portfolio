@@ -31,7 +31,7 @@ const Header = () => {
             <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#skill">My Skills</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li>
-            <li onClick={handleDownload} className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api-Resume.pdf" download>My Resume</a></li>
+            <li onClick={handleDownload} className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api-Resume2.pdf" download>My Resume</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#contact">Contact</a></li>
           </ul>
@@ -58,7 +58,7 @@ const Header = () => {
           <li><a onClick={() => setMenuOpen(false)} href="#services">Services</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#skill">My Skills</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#experience">Experience</a></li>
-          <li onClick={handleDownload}><a href="/Md.-Ashikur-Rahaman-Api-Resume.pdf" download>My Resume</a></li>
+          <li onClick={handleDownload}><a href="/Md.-Ashikur-Rahaman-Api-Resume2.pdf" download>My Resume</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#testimonials">Testimonials</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#contact">Contact</a></li>
           <li>
