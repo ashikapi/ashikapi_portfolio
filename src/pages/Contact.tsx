@@ -68,7 +68,7 @@ const Contact = () => {
                             </div>
                             <div className='mb-2'><input required type="text" className='border-none lg:px-[80px] lg:py-6 lg:w-[580px] w-[360px] h-[60px] px-9 py-4  text-center  bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-teal-400 text-white' placeholder='Subject' /></div>
                             <div className='mb-2'><input required type="text" className='border-none lg:p-[80px] lg:w-[580px] w-[360px] h-[300px] px-18 py-4 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-teal-400 text-white' placeholder='Write Your Message Here....' /></div>
-                            <button className='flex items-center gap-2 mt-4 px-6 py-3 text-white text-md font-bold border-none rounded-xl bg-teal-600 hover:bg-teal-700 shadow-2xl '>Send Message<BsSendFill /></button>
+                            <button className='flex items-center gap-2 mt-4 px-6 py-3 text-white text-md font-bold border-none rounded-xl bg-teal-600 hover:bg-teal-700 shadow-2xl transition-all transform duration-700 group'>Send Message<BsSendFill className="group-hover:translate-x-2 transition-all transform duration-700"/></button>
                         </form>
                     </div>
                 </div>
