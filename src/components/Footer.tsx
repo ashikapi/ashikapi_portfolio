@@ -2,6 +2,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import '../../style/style.css';
 
 const Footer = () => {
   return (
@@ -12,16 +13,16 @@ const Footer = () => {
 
         <div className='lg:mt-8 lg:-ml-6 mt-4 -ml-14'>
           <div className='text-xl text-white mt-4 space-x-6 '>
-            <button className='p-2 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+            <button className='p-2 animation-roteIconB bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
               <a target='_blanck' href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
             </button>
-            <button className='p-2 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+            <button className='p-2 animation-roteIconB bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
               <a target='_blank' href=""><FaTwitter /></a>
             </button>
-            <button className='p-2 bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+            <button className='p-2 animation-roteIconA bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
               <a target='_blank' href="https://www.linkedin.com/in/ashik-api-767765341"><FaLinkedinIn /></a>
             </button>
-            <button className='p-2 bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+            <button className='p-2 animation-roteIconA bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
               <a target='_blank' href="https://github.com/ashikapi"><FaGithubSquare /></a>
             </button>
           </div>

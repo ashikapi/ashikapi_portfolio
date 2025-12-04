@@ -1,0 +1,24 @@
+@keyframes roteIconA {
+  0%, 100% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+}
+
+.animation-roteIconA {
+  animation: roteIconA 4s ease-in-out infinite;
+}
+@keyframes roteIconB {
+  0%, 100% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+}
+
+.animation-roteIconB {
+  animation: roteIconB 4s ease-in-out infinite;
+}
