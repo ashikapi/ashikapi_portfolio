@@ -8,8 +8,8 @@ import { FaTwitter } from "react-icons/fa";
 import { BsSendFill } from "react-icons/bs";
 
 const contactInfo = [
-    { name: "Email", icon: <IoMdMail />, details: "ashikapi65@gmail.com" },
-    { name: "Phone Number", icon: <FaPhoneVolume />, details: "+8801878333115" },
+    { name: "Email", icon: <IoMdMail />, details: "ashikapi65@gmail.com", contact:'mailto:ashikapi65@gmail.com' },
+    { name: "Phone Number", icon: <FaPhoneVolume />, details: "+8801878333115", contact:'tel:+8801878333115' },
     { name: "Location", icon: <MdLocationPin />, details: "Dhaka Bangladesh" },
 ]
 
@@ -41,7 +41,9 @@ const Contact = () => {
                                     <label className='p-4 mt-4 bg-white text-orange-500 text-2xl shadow-2xl shadow-black rounded-full'>{contact.icon}</label>
                                     <div>
                                         <p className='italic text-xl text-white font-bold'>{contact.name}</p>
+                                        <a href={contact.contact}>
                                         <p className='text-lg text-[rgb(135,154,173)] font-semibold opacity-80'>{contact.details}</p>
+                                        </a>
                                     </div>
                                 </li>
                             ))}
