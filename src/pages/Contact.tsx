@@ -38,7 +38,7 @@ const Contact = () => {
                         <div>
                             <ul> {contactInfo.map((contact, index) => (
                                 <li key={index} className='flex items-center gap-4 space-y-4'>
-                                    <label className='p-4 mt-4 bg-white text-orange-500 text-2xl shadow-2xl shadow-black rounded-full'>{contact.icon}</label>
+                                    <label className='p-4 mt-4 bg-white text-orange-500 text-2xl shadow-2xl shadow-black rounded-full animate-pulse'>{contact.icon}</label>
                                     <div>
                                         <p className='italic text-xl text-white font-bold'>{contact.name}</p>
                                         <a href={contact.contact}>
