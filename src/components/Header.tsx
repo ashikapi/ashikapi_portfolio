@@ -17,9 +17,16 @@ const Header = () => {
           <a href="#home">
           <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src="https://i.postimg.cc/zXKzKsyp/logo.png" alt="Ashik" /></a>
           <a href="#home">
-          <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
+          {/* <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
             Ashik Api <span className=''>.</span>
-          </h1>
+          </h1> */}
+          <h1 className="relative inline-block text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase">
+  Ashik Api
+  <span className="absolute -right-4 top-2/3 -translate-y-1/2 flex h-2 w-2">
+    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[rgb(0,213,190)] opacity-75"></span>
+    <span className="relative inline-flex h-2 w-2 rounded-full bg-[rgb(0,213,190)]"></span>
+  </span>
+</h1>
           </a>
         </div>
 
