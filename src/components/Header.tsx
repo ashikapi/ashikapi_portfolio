@@ -10,7 +10,7 @@ const Header = () => {
   }
 
   return (
-    <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 left-0 z-10'>
+    <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 z-10'>
       <div className='md:flex md:justify-evenly flex justify-between items-center '>
         {/* Logo & Name */}
         <div className='flex items-center lg:gap-3 md:gap-2 gap-3 md:mr-1'>
@@ -46,13 +46,13 @@ const Header = () => {
         <div>
           <ul className='hidden lg:flex justify-evenly items-center text-slate-50 font-semibold lg:text-lg md:text-sm text-lg list-none gap-6 lg:mr-4 md:ml-2'>
             <li>
-              <a className='lg:px-4 lg:py-2 md:px-2 md:py-1 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
+              <a className='lg:px-4 lg:py-2 md:px-2 md:py-1 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase md:animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
             </li>
           </ul>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className='md:hidden text-2xl text-white mr-2' onClick={() => setMenuOpen(!menuOpen)}>
+        <div className='md:hidden text-2xl text-white' onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>

@@ -13,7 +13,7 @@ import { SiHtml5 } from "react-icons/si";
 
 const Home = () => {
     return (
-        <div className='bg-[rgb(15,23,43)] -mt-2 lg:pt-24 lg:pb-14 md:pt-20 md:pb-10 sm:pt-28 sm:pb-10 pt-4 pb-10 pl-2 pr-2'>
+        <div className='bg-[rgb(15,23,43)] lg:pt-24 lg:pb-14 md:pt-20 md:pb-10 sm:pt-28 sm:pb-10 pt-4 pb-10 px-4'>
             <div className='lg:flex lg:justify-evenly lg:items-center'>
                 <div className=' animate__animated animate__fadeInLeft animate__delay-1s'>
                     <div className='mb-2'>
@@ -64,16 +64,16 @@ const Home = () => {
                         <div className='lg:mt-8 lg:ml-0 md:ml-38 animate__animated animate__fadeInUp animate__delay-6s'>
                             <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase '>Find Me In</h1>
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
-                                <button className='p-2 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                <button className='md:p-2 p-1 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
                                     <a target='_blanck' href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
                                 </button>
-                                <button className='p-2 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                <button className='md:p-2 p-1 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
                                     <a target='_blank' href=""><FaTwitter /></a>
                                 </button>
-                                <button className='p-2 bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                <button className='md:p-2 p-1 bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
                                     <a target='_blank' href="https://www.linkedin.com/in/ashik-api-767765341"><FaLinkedinIn /></a>
                                 </button>
-                                <button className='p-2 bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                <button className='md:p-2 p-1 bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
                                     <a target='_blank' href="https://github.com/ashikapi"><FaGithubSquare /></a>
                                 </button>
                             </div>
@@ -82,10 +82,10 @@ const Home = () => {
 
                             <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase'>Best Skill On</h1>
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
-                                <button className='p-2 bg-black text-blue-300 shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiReactjsLine /></button>
-                                <button className='p-2 bg-black text-[#3C873A] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><FaNodeJs /></button>
-                                <button className='p-2 bg-black text-blue-400 shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiTailwindCssFill /></button>
-                                <button className='p-2 bg-black text-[#F06529] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><SiHtml5 /></button>
+                                <button className='md:p-2 p-1 bg-black text-blue-300 shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiReactjsLine /></button>
+                                <button className='md:p-2 p-1 bg-black text-[#3C873A] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><FaNodeJs /></button>
+                                <button className='md:p-2 p-1 bg-black text-blue-400 shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiTailwindCssFill /></button>
+                                <button className='md:p-2 p-1 bg-black text-[#F06529] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><SiHtml5 /></button>
                             </div>
                         </div>
                     </div>

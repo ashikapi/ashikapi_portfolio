@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
         <Header/>
-        <main className='pt-20'>
+        <main className='pt-16'>
         <Hero/>
         </main>
         <Footer/>
