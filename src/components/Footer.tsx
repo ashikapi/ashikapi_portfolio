@@ -6,7 +6,7 @@ import '../../style/style.css';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[rgb(29,41,61)] text-[rgb(255,255,255)] py-10 mt-0 clip-footer">
+    <footer className="relative bg-[rgb(29,41,61)] text-[rgb(255,255,255)] py-5 mt-0 clip-footer">
       {/* <div className="w-auto mx-auto px-4 xl:ml-[660px] lg:ml-[410px] lg:mt-40 md:ml-78  mt-20 ml-35"> */}
       <div className="w-full mx-auto text-center lg:mt-40 mt-20">
         <h2 className="md:text-3xl font-bold mb-2">Ashik Api.</h2>
@@ -31,10 +31,10 @@ const Footer = () => {
       </div>
       {/* <div className='mt-10 opacity-40'><hr /></div> */}
       <div className="flex justify-center items-center mt-10 border-b w-full opacity-10"></div>
-      <div className='flex justify-center items-center mt-5'>
+      <div className='flex justify-center items-center mt-1'>
         <div className='text-center'>
           <div className="text-[rgb(136,147,162)]">© 2025 Ashik Api. All rights reserved.</div>
-          <div className='mt-5 sm:mb-0 mb-5 space-x-4  text-[rgb(136,147,162)] '>
+          <div className='mt-1 sm:mb-0 mb-1 space-x-1  text-[rgb(136,147,162)] '>
             <button className="hover:text-teal-400"><a href="#home">Privacy Policy</a></button>
             <button className="hover:text-teal-400"><a href="#home">Terms of Service</a></button>
           </div>

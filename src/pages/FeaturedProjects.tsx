@@ -43,7 +43,7 @@ url: 'https://bmcbd.netlify.app/'
 
 const FeaturedProjects = () => {
   return (
-    <div className='flex justify-center items-center mt-12 mb-12 px-10'>
+    <div className='flex justify-center items-center mt-12 mb-12 md:px-10 px-2'>
         <div>
             <div className='flex justify-center items-center'>
                 <h1 className="text-3xl font-bold text-slate-900 mb-4">Featured <span className='text-teal-600'>Projects</span></h1>
