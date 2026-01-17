@@ -10,9 +10,9 @@ const Footer = () => {
       {/* <div className="w-auto mx-auto px-4 xl:ml-[660px] lg:ml-[410px] lg:mt-40 md:ml-78  mt-20 ml-35"> */}
       <div className="w-full mx-auto text-center lg:mt-40 mt-20">
         <h2 className="md:text-3xl font-bold mb-2">Ashik Api.</h2>
-        <p className="text-[rgb(129,150,159)] lg:mb-6">Web Developer & SEO Expeart</p>
+        <p className="text-[rgb(129,150,159)] lg:mb-2">Web Developer & SEO Expeart</p>
 
-        <div className='lg:mt-8 mt-4'>
+        <div className='lg:mt-4 mt-4'>
           <div className='text-xl text-white mt-4 space-x-6 '>
             <button className='p-2 animation-roteIconB bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
               <a target='_blanck' href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
