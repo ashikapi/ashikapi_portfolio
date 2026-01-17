@@ -43,7 +43,7 @@ url: 'https://bmcbd.netlify.app/'
 
 const FeaturedProjects = () => {
   return (
-    <div className='flex justify-center items-center mt-12 mb-12'>
+    <div className='flex justify-center items-center mt-12 mb-12 px-10'>
         <div>
             <div className='flex justify-center items-center'>
                 <h1 className="text-3xl font-bold text-slate-900 mb-4">Featured <span className='text-teal-600'>Projects</span></h1>
@@ -55,9 +55,9 @@ const FeaturedProjects = () => {
               <div className="p-4">
                 <h1 className='text-xl font-semibold text-black mb-3'>{project.title}</h1>
                 <p className='text-center text-black opacity-80'>{project.Description}</p>
-                <div className='grid grid-cols-4 gap-2 mt-4 text-[rgb(33,156,137)] pb-10'>
+                <div className='grid grid-cols-4 gap-2 mt-4 text-[rgb(33,156,137)] pb-5'>
                   {project.Tech.map((tech, index) => (
-                <button key={index} className='px-2 py-1 bg-[rgb(203,251,241)] rounded-md'>{tech}</button>
+                <button key={index} className='px-2 py-1 bg-[rgb(203,251,241)] rounded-md text-sm'>{tech}</button>
                   ))}
                 </div>
                 

@@ -35,11 +35,11 @@ const Header = () => {
           <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold xl:text-lg text-sm list-none xl:gap-6 lg:gap-4 md:gap-2.5 xl:mr-4'>
             <li className='hover:text-[rgb(0,150,137)]'><a className='' href="#home">Home</a></li>
             <li className='hover:text-[rgb(0,150,137)]'><a href="#aboutme">About Me</a></li>
-            <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li>
+            {/* <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li> */}
             <li className='hover:text-[rgb(0,150,137)]'><a href="#skill">My Skills</a></li>
-            <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li>
+            {/* <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li> */}
             <li onClick={handleDownload} className='hover:text-[rgb(0,150,137)]'><a href="/Md.-Ashikur-Rahaman-Api-Resume2.pdf" download>My Resume</a></li>
-            <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li>
+            {/* <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li> */}
             <li className='hover:text-[rgb(0,150,137)]'><a href="#contact">Contact</a></li>
           </ul>
         </div>
