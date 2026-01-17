@@ -30,8 +30,8 @@ const Footer = () => {
         </div>
       </div>
       {/* <div className='mt-10 opacity-40'><hr /></div> */}
-      <div className="flex justify-center items-center mt-10 border-b w-full opacity-10"></div>
-      <div className='flex justify-center items-center mt-1'>
+      <div className="flex justify-center items-center mt-5 border-b w-full opacity-10"></div>
+      <div className='flex justify-center items-center mt-5'>
         <div className='text-center'>
           <div className="text-[rgb(136,147,162)]">© 2025 Ashik Api. All rights reserved.</div>
           <div className='mt-1 sm:mb-0 mb-1 space-x-1  text-[rgb(136,147,162)] '>
