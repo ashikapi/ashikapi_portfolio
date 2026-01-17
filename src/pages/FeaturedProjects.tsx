@@ -1,9 +1,11 @@
 import { TbWindowMinimize } from "react-icons/tb";
 import projectImage1 from '../images/project_image/bmcbd.png';
+import projectImage3 from '../images/project_image/DigiCart.png';
 import projectImage2 from '../images/project_image/akashadhikary.png';
 
 const featuredetails = [
   {
+    img:projectImage3,
     title: 'DigiKart – Gift Card & Game Top-Up Platform',
 Description: 'Dynamic gift card platform featuring OTP login and SSLCommerz checkout.',
 Tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'Java Script', 'PHP Mailer'],
@@ -56,7 +58,7 @@ const FeaturedProjects = () => {
             <div className='flex justify-center items-center'>
                 <h1 className="text-3xl font-bold text-slate-900 mb-4">Featured <span className='text-teal-600'>Projects</span></h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4'>
                 {featuredetails.map((project, index) => (
             <div key={index} className='flex flex-col items-center bg-white text-white shadow-sm shadow-gray-300 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-gray-400 transition-shadow duration-300'>
               <img src={project.img} alt={project.title} className="w-full md:h-full h-60 rounded-t-xl mb-4 transform transition-all hover:scale-105 duration-700 md:object-cover object-center" />
