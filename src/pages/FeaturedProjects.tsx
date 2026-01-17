@@ -1,5 +1,6 @@
 import { TbWindowMinimize } from "react-icons/tb";
 import projectImage1 from '../images/project_image/bmcbd.png';
+import projectImage2 from '../images/project_image/akashadhikary.png';
 
 const featuredetails = [
   {
@@ -38,7 +39,14 @@ url: '#'
 Description: 'A frontend-developed corporate website for a CIPS-focused organization, featuring responsive layout, structured content, and optimized performance.',
 Tech:[ 'React', 'Tailwind CSS', 'Type Script' ],
 url: 'https://bmcbd.netlify.app/'
-  }
+  },
+  {
+    img: projectImage2,
+    title: 'Modern Personal Portfolio Website',
+    Description: 'A responsive personal portfolio website built using Next.js, Tailwind CSS, and TypeScript to showcase projects, skills, and professional profile with a modern design.',
+    Tech: ['Next.js', 'Type Script', 'Tailwind CSS'],
+    url: 'https://akashadhikary.netlify.app/'
+  },
 ]
 
 const FeaturedProjects = () => {
