@@ -1,5 +1,6 @@
 import { TbWindowMinimize } from "react-icons/tb";
 import projectImage1 from '../images/project_image/bmcbd.png';
+import projectImage4 from '../images/project_image/TravelAgency.png';
 import projectImage3 from '../images/project_image/DigiCart.png';
 import projectImage2 from '../images/project_image/akashadhikary.png';
 
@@ -50,11 +51,11 @@ url: 'https://bmcbd.netlify.app/'
     url: 'https://akashadhikary.netlify.app/'
   },
   {
-    img: projectImage2,
+    img: projectImage4,
     title: 'Travel Agency Website',
     Description: 'A modern travel agency website that showcases popular destinations, tour packages, and travel services with intuitive navigation and engaging visuals.',
     Tech: ['React', 'Type Script', 'Tailwind CSS'],
-    url: 'https://akashadhikary.netlify.app/'
+    url: 'https://travelagencyfortravel.netlify.app/'
   },
 ]
 
