@@ -1,12 +1,15 @@
 import { TbWindowMinimize } from "react-icons/tb";
-import projectImage1 from '../images/project_image/bmcbd.png';
-import projectImage4 from '../images/project_image/TravelAgency.png';
-import projectImage3 from '../images/project_image/DigiCart.png';
-import projectImage2 from '../images/project_image/akashadhikary.png';
+import projectImage1 from '../images/project_image/DigiCart.png';
+// import projectImage2 from '../images/project_image/PersonalPortfolio.png';
+import projectImage3 from '../images/project_image/Velora.png';
+import projectImage4 from '../images/project_image/bmcbd.png';
+import projectImage5 from '../images/project_image/akashadhikary.png';
+import projectImage6 from '../images/project_image/TravelAgency.png';
+
 
 const featuredetails = [
   {
-    img:projectImage3,
+    img:projectImage1,
     title: 'DigiKart – Gift Card & Game Top-Up Platform',
 Description: 'Dynamic gift card platform featuring OTP login and SSLCommerz checkout.',
 Tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'Java Script', 'PHP Mailer'],
@@ -19,7 +22,8 @@ Tech: ['React', 'Type Script', 'Tailwind CSS'],
 url: '#'
   },
   {
-    title: 'Fashion--House (Online Shop)',
+    img: projectImage3,
+    title: 'Velora (Online Shop)',
     Description: 'Modern fashion e-commerce UI with responsive design.',
     Tech: ['React', 'Type Script', 'Tailwind CSS'],
     url: '#'
@@ -37,21 +41,21 @@ url: '#'
 // url: '#'
 //   },
    {
-    img: projectImage1,
+    img: projectImage4,
     title: 'BMCBD – CIPS-Focused Corporate Website',
 Description: 'A frontend-developed corporate website for a CIPS-focused organization, featuring responsive layout, structured content, and optimized performance.',
 Tech:[ 'React', 'Tailwind CSS', 'Type Script' ],
 url: 'https://bmcbd.netlify.app/'
   },
   {
-    img: projectImage2,
+    img: projectImage5,
     title: 'Modern Personal Portfolio Website',
     Description: 'A responsive personal portfolio website built using Next.js, Tailwind CSS, and TypeScript to showcase projects, skills, and professional profile with a modern design.',
     Tech: ['Next.js', 'Type Script', 'Tailwind CSS'],
     url: 'https://akashadhikary.netlify.app/'
   },
   {
-    img: projectImage4,
+    img: projectImage6,
     title: 'Travel Agency Website',
     Description: 'A modern travel agency website that showcases popular destinations, tour packages, and travel services with intuitive navigation and engaging visuals.',
     Tech: ['React', 'Type Script', 'Tailwind CSS'],
