@@ -66,26 +66,53 @@ const FeaturedProjects = () => {
             <div className='flex justify-center items-center'>
                 <h1 className="text-3xl font-bold text-slate-900 mb-4">Featured <span className='text-teal-600'>Projects</span></h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4'>
-                {featuredetails.map((project, index) => (
-            <div key={index} className='flex flex-col items-center bg-white text-white shadow-sm shadow-gray-300 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-gray-400 transition-shadow duration-300'>
-              <a href={project.url} target="_blanck">
-              <img src={project.img} alt={project.title} className="w-full md:h-full h-60 rounded-t-xl mb-4 transform transition-all hover:scale-105 duration-700 md:object-cover object-center" />
-              </a>
-              <div className="p-4">
-                <h1 className='text-xl font-semibold text-black mb-3'>{project.title}</h1>
-                <p className='text-center text-black opacity-80'>{project.Description}</p>
-                <div className='grid grid-cols-4 gap-2 mt-4 text-[rgb(33,156,137)] pb-5'>
-                  {project.Tech.map((tech, index) => (
-                <button key={index} className='px-2 py-1 bg-[rgb(203,251,241)] rounded-md text-sm'>{tech}</button>
-                  ))}
-                </div>
-                
-                <button className='flex justify-center items-center text-center mt-auto w-full p-2 border border-[rgb(90,185,177)] text-[rgb(8,157,153)] rounded-xl gap-4 text-xl hover:bg-teal-50 hover:text-black font-semibold'><a href={project.url} target="_blanck" className="flex justify-evenly items-center gap-2"><TbWindowMinimize /> Visit Now</a></button>
-                </div>
-                </div>
-                ))}
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
+  {featuredetails.map((project, index) => (
+    <div
+      key={index}
+      className="group flex flex-col bg-white shadow-sm shadow-gray-300 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-gray-400 transition-shadow duration-300"
+    >
+      <a href={project.url} target="_blank" rel="noopener noreferrer">
+        <img
+          src={project.img}
+          alt={project.title}
+          className="w-full md:h-full h-60 object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+      </a>
+
+      <div className="p-4 flex flex-col flex-grow">
+        <h1 className="text-xl font-semibold text-black mb-3 text-center">
+          {project.title}
+        </h1>
+
+        <p className="text-center text-black opacity-80">
+          {project.Description}
+        </p>
+
+        <div className="grid grid-cols-4 gap-2 mt-4 text-[rgb(33,156,137)] pb-5">
+          {project.Tech.map((tech, index) => (
+            <span
+              key={index}
+              className="px-2 py-1 bg-[rgb(203,251,241)] rounded-md text-sm text-center"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto flex justify-center items-center w-full p-2 border border-[rgb(90,185,177)] text-[rgb(8,157,153)] rounded-xl gap-2 text-xl hover:bg-teal-50 hover:text-black font-semibold"
+        >
+          <TbWindowMinimize /> Visit Now
+        </a>
+      </div>
+    </div>
+  ))}
+</div>
+
             
         </div>
     </div>
