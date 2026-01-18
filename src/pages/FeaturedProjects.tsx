@@ -69,7 +69,9 @@ const FeaturedProjects = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4'>
                 {featuredetails.map((project, index) => (
             <div key={index} className='flex flex-col items-center bg-white text-white shadow-sm shadow-gray-300 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-gray-400 transition-shadow duration-300'>
+              <a href={project.url} target="_blanck">
               <img src={project.img} alt={project.title} className="w-full md:h-full h-60 rounded-t-xl mb-4 transform transition-all hover:scale-105 duration-700 md:object-cover object-center" />
+              </a>
               <div className="p-4">
                 <h1 className='text-xl font-semibold text-black mb-3'>{project.title}</h1>
                 <p className='text-center text-black opacity-80'>{project.Description}</p>
