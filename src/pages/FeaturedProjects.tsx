@@ -13,7 +13,7 @@ const featuredetails = [
     title: 'DigiKart – Gift Card & Game Top-Up Platform',
 Description: 'Dynamic gift card platform featuring OTP login and SSLCommerz checkout.',
 Tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'Java Script', 'PHP Mailer'],
-url: ''
+url: 'https://github.com/ashikapi/DigiKart'
   },
   { img: projectImage2,
     title: 'HRMS – Human Resource Management System',
@@ -26,7 +26,7 @@ url: '#'
     title: 'Velora (Online Shop)',
     Description: 'Modern fashion e-commerce UI with responsive design.',
     Tech: ['React', 'Type Script', 'Tailwind CSS'],
-    url: '#'
+    url: 'https://github.com/ashikapi/VELORA-online-shop'
   },
 //   {
 //    title: 'Farmer Ecommerce Frontend',
