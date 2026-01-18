@@ -51,7 +51,7 @@ url: 'https://bmcbd.netlify.app/'
     img: projectImage5,
     title: 'Modern Personal Portfolio Website',
     Description: 'A responsive personal portfolio website built using Next.js, Tailwind CSS, and TypeScript to showcase projects, skills, and professional profile with a modern design.',
-    Tech: ['Next.js', 'Type Script', 'Tailwind CSS'],
+    Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
     url: 'https://akashadhikary.netlify.app/'
   },
   {
@@ -89,7 +89,7 @@ const FeaturedProjects = () => {
           {project.title}
         </h1>
 
-        <p className="text-center text-black opacity-80">
+        <p className="text-start px-4 text-black opacity-80">
           {project.Description}
         </p>
 
@@ -97,7 +97,7 @@ const FeaturedProjects = () => {
           {project.Tech.map((tech, index) => (
             <span
               key={index}
-              className="px-2 py-1 bg-[rgb(203,251,241)] rounded-md text-sm text-center"
+              className="px-2 py-1 bg-[rgb(203,251,241)] rounded-md sm:text-sm text-xs text-center"
             >
               {tech}
             </span>
