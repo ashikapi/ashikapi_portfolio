@@ -68,9 +68,9 @@ const FeaturedProjects = () => {
     <div className='flex justify-center items-center mt-12 mb-12 md:px-10 px-2'>
         <div>
             <div className='flex justify-center items-center'>
-                <h1 className="text-3xl font-bold text-slate-900 mb-4">Featured <span className='text-teal-600'>Projects</span></h1>
+                <h1 className="lg:text-3xl md:text-2xl sm:text-xl text-lg font-extrabold text-slate-900 mb-4">Featured<span className='lg:text-6xl md:text-4xl sm:text-3xl text-2xl text-teal-600'>Projects</span></h1>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
+            <div className=" mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
   {featuredetails.map((project, index) => (
     <div
       key={index}
