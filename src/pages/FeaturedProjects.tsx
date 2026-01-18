@@ -1,6 +1,6 @@
 import { TbWindowMinimize } from "react-icons/tb";
 import projectImage1 from '../images/project_image/DigiCart.png';
-// import projectImage2 from '../images/project_image/PersonalPortfolio.png';
+import projectImage2 from '../images/project_image/HRMS.png';
 import projectImage3 from '../images/project_image/Velora.png';
 import projectImage4 from '../images/project_image/bmcbd.png';
 import projectImage5 from '../images/project_image/akashadhikary.png';
@@ -15,7 +15,7 @@ Description: 'Dynamic gift card platform featuring OTP login and SSLCommerz chec
 Tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'Java Script', 'PHP Mailer'],
 url: ''
   },
-  {
+  { img: projectImage2,
     title: 'HRMS – Human Resource Management System',
 Description: 'Internship project for HR Management UI using React & Tailwind CSS.',
 Tech: ['React', 'Type Script', 'Tailwind CSS'],
