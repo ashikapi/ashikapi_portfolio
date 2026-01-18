@@ -49,6 +49,13 @@ url: 'https://bmcbd.netlify.app/'
     Tech: ['Next.js', 'Type Script', 'Tailwind CSS'],
     url: 'https://akashadhikary.netlify.app/'
   },
+  {
+    img: projectImage2,
+    title: 'Travel Agency Website',
+    Description: 'A responsive personal portfolio website built using Next.js, Tailwind CSS, and TypeScript to showcase projects, skills, and professional profile with a modern design.',
+    Tech: ['Next.js', 'Type Script', 'Tailwind CSS'],
+    url: 'https://akashadhikary.netlify.app/'
+  },
 ]
 
 const FeaturedProjects = () => {
