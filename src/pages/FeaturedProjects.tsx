@@ -67,7 +67,7 @@ url: 'https://bmcbd.netlify.app/'
     title: 'Webify Academy (online learning platform)',
     Description: 'A modern digital skills and IT training platform designed to offer courses in web development, digital marketing, design, and other career-focused technologies.',
     Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
-    url: '#'
+    url: 'https://webify-academy.vercel.app/'
   },
 ]
 
