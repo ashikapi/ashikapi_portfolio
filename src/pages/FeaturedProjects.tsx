@@ -79,7 +79,7 @@ const FeaturedProjects = () => {
                 <h1 className="lg:text-3xl md:text-2xl sm:text-xl text-lg font-extrabold text-slate-900 mb-4">Featured<span className='lg:text-6xl md:text-4xl sm:text-3xl text-2xl text-teal-600'>Projects</span></h1>
             </div>
             <div className=" mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-4">
-  {featuredetails.map((project, index) => (
+  {featuredetails.slice(0).reverse().map((project, index) => (
     <div
       key={index}
       className="group flex flex-col bg-white shadow-sm shadow-gray-300 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-gray-400 transition-shadow duration-300"
