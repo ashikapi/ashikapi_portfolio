@@ -5,6 +5,7 @@ import projectImage3 from '../images/project_image/Velora.png';
 import projectImage4 from '../images/project_image/bmcbd.png';
 import projectImage5 from '../images/project_image/akashadhikary.png';
 import projectImage6 from '../images/project_image/TravelAgency.png';
+import projectImage7 from '../images/project_image/Webify Academy.png';
 
 
 const featuredetails = [
@@ -60,6 +61,13 @@ url: 'https://bmcbd.netlify.app/'
     Description: 'A modern travel agency website that showcases popular destinations, tour packages, and travel services with intuitive navigation and engaging visuals.',
     Tech: ['React', 'Type Script', 'Tailwind CSS'],
     url: 'https://travelagencyfortravel.netlify.app/'
+  },
+  {
+    img: projectImage7,
+    title: 'Webify Academy (online learning platform)',
+    Description: 'A modern digital skills and IT training platform designed to offer courses in web development, digital marketing, design, and other career-focused technologies.',
+    Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
+    url: '#'
   },
 ]
 
