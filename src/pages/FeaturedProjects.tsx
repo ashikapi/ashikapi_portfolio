@@ -6,6 +6,7 @@ import projectImage4 from '../images/project_image/bmcbd.png';
 import projectImage5 from '../images/project_image/akashadhikary.png';
 import projectImage6 from '../images/project_image/TravelAgency.png';
 import projectImage7 from '../images/project_image/Webify Academy.png';
+import projectImage8 from '../images/project_image/Build Core.png';
 
 
 const featuredetails = [
@@ -68,6 +69,13 @@ url: 'https://bmcbd.netlify.app/'
     Description: 'A modern digital skills and IT training platform designed to offer courses in web development, digital marketing, design, and other career-focused technologies.',
     Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
     url: 'https://webify-academy.vercel.app/'
+  },
+  {
+    img: projectImage8,
+    title: 'Build Core (Construction Company Website)',
+    Description: 'A modern construction company website showcasing projects, services, and team expertise with a responsive design and intuitive navigation.',
+    Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
+    url: 'https://build-core-project.vercel.app/'
   },
 ]
 
