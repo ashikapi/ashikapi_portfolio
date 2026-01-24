@@ -1,6 +1,6 @@
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa6";
-import { RiReactjsLine } from "react-icons/ri";
+import { RiNextjsFill, RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { AiOutlineJavaScript } from "react-icons/ai";
@@ -19,6 +19,7 @@ const technicalSkills = [
     { name: "Java Script", icon: <AiOutlineJavaScript className='text-[#F0DB4F]' /> },
     { name: "Type Script", icon: <TbBrandTypescript className='text-[rgba(49,120,198,1)]' /> },
     { name: "React", icon: <RiReactjsLine className='text-blue-300' /> },
+    { name: "Next Js", icon: <RiNextjsFill className='text-[#0070F3]' /> },
     { name: "Node Js", icon: <FaNodeJs className='text-[#3C873A]' /> },
     { name: "Mongo DB", icon: <BiLogoMongodb className='text-[#E8E7D5]' /> },
     { name: "MySQL", icon: <GrMysql className='text-[#00758F]' /> },
@@ -39,7 +40,7 @@ const creativeSkills = [
 
 const Skills = () => {
     return (
-        <div className='flex justify-evenly items-center lg:pb-20 pb-10 bg-[rgb(243,244,246)]'>
+        <div className='flex justify-evenly items-center md:py-10 py-6 px-2 md:px-10 bg-[rgb(243,244,246)]'>
             <div>
                 <div className='flex justify-center items-center'>
                     <div className='mx-auto mt-10 mb-10'>
@@ -49,35 +50,39 @@ const Skills = () => {
                         </h1>
                     </div>
                 </div>
-                <div className='md:flex md:justify-evenly md:items-center lg:gap-6 gap-20'>
-                    <div className='xl:ml-20 lg:ml-10 ml-2 mr-2'>
+                <div className='xl:flex justify-evenly items-center gap-6'>
+                    <div className=''>
                         <div className='flex justify-evenly'>
                             <div>
                                 <h1 className='lg:text-3xl md:text-2xl sm:text-xl text-xl font-semibold mb-3'>Technical Proficiencies</h1>
                                 <p className='mb-6 sm:text-lg opacity-45 font-semibold'>Mastered through hands-on projects and continuous upskilling:</p> </div>
                         </div>
-                        <ul className='grid grid-cols-2 xl:p-4 lg:p-2 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl'>
+                        <ul className='grid grid-cols-2 md:p-10 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl md:gap-6 gap-4'>
                             {technicalSkills.map((skills, index) => (
-                                <li className='grid grid-cols-2 items-center gap-10 xl:gap-10 lg:gap-10 md:gap-20 xl:px-10 xl:py-6 lg:px-1 lg:py-6 md:py-6 md:pr-16 px-2 py-2 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 xl:ml-4 xl:mr-4 lg:pl-3 lg:pr-16 ml-2 mr-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-500' key={index}>
-                                    <label className='px-2 py-2 xl:pl-5 xl:pr-12 lg:pl-2 lg:pr- md:pl-2 md:pr-10 pl-3.5 rounded-lg md:text-3xl sm:text-2xl text-xl bg-black shadow-2xl shadow-white'>{skills.icon}</label>
-                                    <label className='md:font-bold font-semibold text-lg -ml-5'>{skills.name}</label>
+                                // <li className='grid grid-cols-2 items-center gap-10 xl:gap-10 lg:gap-10 md:gap-20 xl:px-10 xl:py-6 lg:px-1 lg:py-6 md:py-6 md:pr-16 px-2 py-2 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 xl:ml-4 xl:mr-4 lg:pl-3 lg:pr-16 ml-2 mr-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-500' key={index}>
+                                //     <label className='px-2 py-2 xl:pl-5 xl:pr-12 lg:pl-2 lg:pr- md:pl-2 md:pr-10 pl-3.5 rounded-lg md:text-3xl sm:text-2xl text-xl bg-black shadow-2xl shadow-white'>{skills.icon}</label>
+                                //     <label className='md:font-bold font-semibold text-lg -ml-5'>{skills.name}</label>
+                                // </li>
+                                <li key={index} className="flex md:justify-start justify-normal items-center md:gap-6  gap-6 bg-white text-xl shadow-2xl rounded-2xl md:px-10 md:py-6 px-2 py-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-500">
+                                    <label className="px-2 py-2 rounded-lg md:text-3xl sm:text-2xl text-center text-xl bg-black shadow-2xl shadow-white">{skills.icon}</label>
+                                    <label className="md:font-bold font-semibold text-lg">{skills.name}</label>
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className='lg:mr-20 ml-2 mr-2'>
+                    <div className=''>
 
                         <div className='max-w-4xl'>
                             <div>
                                 <h1 className='lg:text-3xl md:text-2xl sm:text-xl text-xl font-semibold mb-3 mt-6'>Professional & Creative Skills</h1>
                                 <p className='mb-6 sm:text-lg opacity-45 font-semibold'>Complementary abilities that enhance project execution:</p>
                             </div>
-                            <ul className='xl:grid xl:grid-cols-2 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl'>
+                            <ul className='md:grid md:grid-cols-2 p-4 shadow-2xl bg-[rgb(15,23,43)] shadow-gray-400 rounded-3xl gap-6 md:space-y-0 space-y-4'>
                                 {creativeSkills.map((Tskills, index) => (
                                     <li
                                         key={index}
-                                        className='flex items-start gap-4 bg-white text-xl shadow-2xl rounded-2xl mt-2 mb-2 pb-4 ml-4 mr-4 
-                                        border-t-4 border-t-red-500 transform scale-100 p-4 max-w-[400px] min-h-[140px] transition delay-150 duration-500 
+                                        className='flex items-start gap-4 bg-white text-xl shadow-2xl rounded-2xl
+                                        border-t-4 border-t-red-500 transform scale-100 p-4 w-full h-40 transition delay-150 duration-500 
                                         ease-in-out hover:-translate-y-1 hover:scale-110 '>
                                         <div className='p-3 shadow-2xl shadow-white bg-black rounded-lg text-3xl text-blue-400 hover:text-orange-400'>
                                             {Tskills.icon}
