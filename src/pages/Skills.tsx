@@ -82,8 +82,8 @@ const Skills = () => {
                                     <li
                                         key={index}
                                         className='flex items-start gap-4 bg-white text-xl shadow-2xl rounded-2xl
-                                        border-t-4 border-t-red-500 transform scale-100 p-4 w-full h-40 transition delay-150 duration-500 
-                                        ease-in-out hover:-translate-y-1 hover:scale-110 '>
+                                        border-t-4 border-t-red-500 transform scale-100 p-4 w-full h-40 transition-all delay-150 duration-500 
+                                        ease-in-out hover:-translate-y-1 hover:scale-105 '>
                                         <div className='p-3 shadow-2xl shadow-white bg-black rounded-lg text-3xl text-blue-400 hover:text-orange-400'>
                                             {Tskills.icon}
                                         </div>
