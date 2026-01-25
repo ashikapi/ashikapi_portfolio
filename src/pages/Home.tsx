@@ -28,6 +28,7 @@ const Home = () => {
                                 [
                                     "MERN Stack Developer .",
                                     "React Frontend Developer .",
+                                    "Next.js Frontend Developer .",
                                     "Web Developer .",
                                     "Freelancer .",
                                     "Designer .",
