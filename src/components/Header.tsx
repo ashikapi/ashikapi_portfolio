@@ -5,13 +5,15 @@ import logo from '../images/logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [openCV, setOpenCV] = useState(false);
+
   const navItems = [
-        { name: 'Home', link: '#home' },
-        { name: 'About Me', link: '#aboutme' },
-        { name: 'My Skills', link: '#skill' },
-        { name: 'My Resume', link: '' },
-        { name: 'Contact', link: '#contact' },
-    ];
+    { name: 'Home', link: '#home' },
+    { name: 'About Me', link: '#aboutme' },
+    { name: 'My Skills', link: '#skill' },
+    // { name: 'My Resume', link: '' },
+    { name: 'Contact', link: '#contact' },
+  ];
   const [hashurlColor, setHashUrlColor] = useState('');
 
   const handleDownload = () => {
@@ -24,19 +26,19 @@ const Header = () => {
         {/* Logo & Name */}
         <div className='flex items-center lg:gap-3 md:gap-2 gap-3 md:mr-1'>
           <a href="#home">
-          {/* <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src="https://i.postimg.cc/zXKzKsyp/logo.png" alt="Ashik" /></a> */}
-          <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={logo} alt="Ashik" /></a>
+            {/* <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src="https://i.postimg.cc/zXKzKsyp/logo.png" alt="Ashik" /></a> */}
+            <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={logo} alt="Ashik" /></a>
           <a href="#home">
-          {/* <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
+            {/* <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
             Ashik Api <span className=''>.</span>
           </h1> */}
-          <h1 className="relative inline-block text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase">
-  Ashik Api
-  <span className="absolute -right-4 top-2/3 -translate-y-1/2 flex h-2 w-2">
-    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[rgb(0,213,190)] opacity-75"></span>
-    <span className="relative inline-flex h-2 w-2 rounded-full bg-[rgb(0,213,190)]"></span>
-  </span>
-</h1>
+            <h1 className="relative inline-block text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase">
+              Ashik Api
+              <span className="absolute -right-4 top-2/3 -translate-y-1/2 flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[rgb(0,213,190)] opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-[rgb(0,213,190)]"></span>
+              </span>
+            </h1>
           </a>
         </div>
 
@@ -46,11 +48,19 @@ const Header = () => {
             {navItems.map((item, index) => (
               <li key={index}>
                 <a href={item.link}
-                 onClick={() => setHashUrlColor(item.link)}
-                 className={hashurlColor === item.link ? 'text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]' : 'hover:text-teal-400 hover:font-semibold transition'}
+                  onClick={() => setHashUrlColor(item.link)}
+                  className={hashurlColor === item.link ? 'text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]' : 'hover:text-teal-400 hover:font-semibold transition'}
                 >{item.name}</a>
               </li>
             ))}
+            <li>
+              <button
+                onClick={() => setOpenCV(true)}
+                className="transition-colors duration-300 hover:text-[rgb(0,150,137)]"
+              >
+                My Resume
+              </button>
+            </li>
           </ul>
         </div>
         <div>
@@ -89,6 +99,31 @@ const Header = () => {
           </li>
         </ul>
       )}
+
+      {openCV && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+
+          <div className="relative w-[90%] md:w-[70%] h-[80%] md:h-[90%] bg-white rounded-lg shadow-lg">
+
+            {/* Close button */}
+            <button
+              onClick={() => setOpenCV(false)}
+              className="absolute -top-1 right-2 text-xl font-bold text-[rgb(0,150,137)] hover:text-red-500"
+            >
+              ✕
+            </button>
+
+            {/* Iframe */}
+            <iframe
+              src="https://drive.google.com/file/d/1Qdm-vaAvX5EZVeXZEPUovpN272muLJd9/preview"
+              className="w-full h-full rounded-lg"
+              allow="autoplay"
+            ></iframe>
+
+          </div>
+        </div>
+      )}
+
     </div>
   )
 }
