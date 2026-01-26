@@ -63,8 +63,8 @@ const Skills = () => {
                                 //     <label className='px-2 py-2 xl:pl-5 xl:pr-12 lg:pl-2 lg:pr- md:pl-2 md:pr-10 pl-3.5 rounded-lg md:text-3xl sm:text-2xl text-xl bg-black shadow-2xl shadow-white'>{skills.icon}</label>
                                 //     <label className='md:font-bold font-semibold text-lg -ml-5'>{skills.name}</label>
                                 // </li>
-                                <li key={index} className="flex md:justify-start justify-normal items-center md:gap-6  gap-6 bg-white text-xl shadow-2xl rounded-2xl md:px-10 md:py-6 px-2 py-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-500">
-                                    <label className="px-2 py-2 rounded-lg md:text-3xl sm:text-2xl text-center text-xl bg-black shadow-2xl shadow-white animate-pulse">{skills.icon}</label>
+                                <li key={index} className="group flex md:justify-start justify-normal items-center md:gap-6  gap-6 bg-white text-xl shadow-2xl rounded-2xl md:px-10 md:py-6 px-2 py-2 border-b-4 border-b-red-500 transform hover:translate-2 scale-100 duration-500">
+                                    <label className="px-2 py-2 rounded-lg md:text-3xl sm:text-2xl text-center text-xl bg-black shadow-2xl shadow-white animate-pulse group-hover:animate-none">{skills.icon}</label>
                                     <label className="md:font-bold font-semibold text-lg">{skills.name}</label>
                                 </li>
                             ))}

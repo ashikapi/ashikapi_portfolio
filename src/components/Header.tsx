@@ -47,7 +47,7 @@ const Header = () => {
               <li key={index}>
                 <a href={item.link}
                  onClick={() => setHashUrlColor(item.link)}
-                 className={hashurlColor === item.link ? 'text-[rgb(0,150,137)] font-bold' : 'hover:text-teal-400 hover:font-semibold transition'}
+                 className={hashurlColor === item.link ? 'text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]' : 'hover:text-teal-400 hover:font-semibold transition'}
                 >{item.name}</a>
               </li>
             ))}
