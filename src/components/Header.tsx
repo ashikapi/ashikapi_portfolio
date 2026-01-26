@@ -12,7 +12,7 @@ const Header = () => {
     { name: 'About Me', link: '#aboutme' },
     { name: 'My Skills', link: '#skill' },
     // { name: 'My Resume', link: '' },
-    { name: 'Contact', link: '#contact' },
+    // { name: 'Contact', link: '#contact' },
   ];
   const [hashurlColor, setHashUrlColor] = useState('');
 
@@ -61,6 +61,20 @@ const Header = () => {
                 My Resume
               </button>
             </li>
+            {/* Contact */}
+            <li>
+              <a
+                href="#contact"
+                onClick={() => setHashUrlColor('#contact')}
+                className={
+                  hashurlColor === '#contact'
+                    ? 'text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]'
+                    : 'hover:text-teal-400 transition'
+                }
+              >
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
         <div>
@@ -85,8 +99,8 @@ const Header = () => {
           <li><a onClick={() => setMenuOpen(false)} href="#services">Services</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#skill">My Skills</a></li>
           <li><a onClick={() => setMenuOpen(false)} href="#experience">Experience</a></li>
-          <li onClick={handleDownload}><a href="/Md.-Ashikur-Rahaman-Api-Resume2.pdf" download>My Resume</a></li>
-          <li><a onClick={() => setMenuOpen(false)} href="#testimonials">Testimonials</a></li>
+          {/* <li onClick={handleDownload}><a href="/Md.-Ashikur-Rahaman-Api-Resume2.pdf" download>My Resume</a></li> */}
+          {/* <li><a onClick={() => setMenuOpen(false)} href="#testimonials">Testimonials</a></li> */}
           <li><a onClick={() => setMenuOpen(false)} href="#contact">Contact</a></li>
           <li>
             <a
@@ -108,9 +122,9 @@ const Header = () => {
             {/* Close button */}
             <button
               onClick={() => setOpenCV(false)}
-              className="absolute -top-1 right-2 text-xl font-bold text-[rgb(0,150,137)] hover:text-red-500"
+              className="absolute top-0 right-0 text-xl font-bold text-[rgb(0,150,137)] hover:text-red-500"
             >
-              ✕
+              <FaTimes />
             </button>
 
             {/* Iframe */}

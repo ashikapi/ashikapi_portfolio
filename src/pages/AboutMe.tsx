@@ -4,6 +4,8 @@ import { useState } from "react";
 
 const AboutMe = () => {
   const [downloaded, setDownloaded] = useState(false);
+  const [openCV, setOpenCV] = useState(false);
+
 
   const handleDownload = () => {
     setDownloaded(true);
@@ -11,7 +13,7 @@ const AboutMe = () => {
     alert("CV Downloaded successfully !"); // Alert message
   };
   return (
-    <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(248,250,252)]">
+    <div className="flex justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 lg:py-20 py-6 bg-[rgb(248,250,252)]">
       <div className="w-full max-w-7xl">
 
         {/* Heading */}
@@ -59,28 +61,57 @@ const AboutMe = () => {
                 Built multiple full-stack projects using MERN, implemented user auth, admin dashboards, and chatbot systems.
               </p>
             </div>
-            <div className="pt-8">
-              <a
-                href="/Md.Ashikur Rahaman Api CV.pdf" // CV link
-                download
-                onClick={handleDownload}
-              >
-                <button
-                  className={`flex justify-evenly items-center gap-2 lg:px-6 lg:py-3 md:px-4 md:py-2 px-4 py-2 border mb-2
-                     text-white rounded-2xl lg:font-bold md:font-bold font-semibold text-lg animate-bounce duration-1000
-                      hover:bg-red-700 ${downloaded ? "bg-green-600" : "bg-red-500"
-                    }`}
-                >
-                  <FaDownload />
-                  {downloaded ? "Downloaded!" : "Download CV"}
-                </button>
-                
-              </a>
-            </div>
+            <div className="pt-8 flex lg:justify-normal justify-center items-center md:gap-10 gap-4">
+  {/* View CV Button */}
+  <button
+    onClick={() => setOpenCV(true)}
+    className="px-4 py-2 md:text-lg text-sm border-2 border-gray-600 bg-gray-800 font-bold text-teal-500 rounded-md
+               transition-all duration-500 hover:scale-110 hover:text-[rgb(0,150,137)]"
+  >
+    View CV Now!
+  </button>
+
+  {/* Download CV */}
+  <a
+    href="/Md.Ashikur-Rahaman-Api-CV.pdf"
+    download
+    onClick={handleDownload}
+    className={`flex items-center gap-2 px-4 py-2 rounded-md md:text-lg text-sm font-semibold text-white
+      transition-all duration-500 animate-bounce hover:bg-red-700
+      ${downloaded ? "bg-green-600" : "bg-red-500"}`}
+  >
+    <FaDownload />
+    {downloaded ? "Downloaded!" : "Download CV"}
+  </a>
+</div>
+
           </div>
         </div>
 
       </div>
+      {openCV && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+
+          <div className="relative w-[90%] md:w-[70%] h-[80%] md:h-[90%] bg-white rounded-lg shadow-lg">
+
+            {/* Close button */}
+            <button
+              onClick={() => setOpenCV(false)}
+              className="absolute -top-1 right-2 text-xl font-bold text-[rgb(0,150,137)] hover:text-red-500"
+            >
+              ✕
+            </button>
+
+            {/* Iframe */}
+            <iframe
+              src="https://drive.google.com/file/d/1YEEO7W_9nWud4y53aOUzkDxFzE_1mmRM/preview"
+              className="w-full h-full rounded-lg"
+              allow="autoplay"
+            ></iframe>
+
+          </div>
+        </div>
+      )}
     </div>
   )
 }
