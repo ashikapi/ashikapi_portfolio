@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import '../../style/style.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="relative bg-[rgb(29,41,61)] text-[rgb(255,255,255)] py-5 mt-0 clip-footer">
       {/* <div className="w-auto mx-auto px-4 xl:ml-[660px] lg:ml-[410px] lg:mt-40 md:ml-78  mt-20 ml-35"> */}
@@ -33,7 +34,7 @@ const Footer = () => {
       <div className="flex justify-center items-center mt-5 border-b w-full opacity-10"></div>
       <div className='flex justify-center items-center mt-5'>
         <div className='text-center'>
-          <div className="text-[rgb(136,147,162)]">© 2025 Ashik Api. All rights reserved.</div>
+          <div className="text-[rgb(136,147,162)]">© {currentYear} Ashik Api. All rights reserved.</div>
           <div className='mt-1 sm:mb-0 mb-1 space-x-1  text-[rgb(136,147,162)] '>
             <button className="hover:text-teal-400"><a href="#home">Privacy Policy</a></button>
             <button className="hover:text-teal-400"><a href="#home">Terms of Service</a></button>
