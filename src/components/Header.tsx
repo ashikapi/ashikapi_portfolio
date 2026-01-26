@@ -5,6 +5,14 @@ import logo from '../images/logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const navItems = [
+        { name: 'Home', link: '#home' },
+        { name: 'About Me', link: '#aboutme' },
+        { name: 'My Skills', link: '#skill' },
+        { name: 'My Resume', link: '' },
+        { name: 'Contact', link: '#contact' },
+    ];
+  const [hashurlColor, setHashUrlColor] = useState('');
 
   const handleDownload = () => {
     alert("CV Downloaded successfully !");
@@ -35,14 +43,14 @@ const Header = () => {
         {/* Desktop Menu */}
         <div>
           <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold xl:text-base text-sm list-none xl:gap-10 lg:gap-4 md:gap-2.5 xl:mr-4'>
-            <li className='hover:text-[rgb(0,150,137)]'><a className='' href="#home">Home</a></li>
-            <li className='hover:text-[rgb(0,150,137)]'><a href="#aboutme">About Me</a></li>
-            {/* <li className='hover:text-[rgb(0,150,137)]'><a href="#services">Services</a></li> */}
-            <li className='hover:text-[rgb(0,150,137)]'><a href="#skill">My Skills</a></li>
-            {/* <li className='hover:text-[rgb(0,150,137)]'><a href="#experience">Experience</a></li> */}
-            <li onClick={handleDownload} className='hover:text-[rgb(0,150,137)]'><a href="/Md.Ashikur Rahaman Api CV.pdf" download>My Resume</a></li>
-            {/* <li className='hover:text-[rgb(0,150,137)]'><a href="#testimonials">Testimonials</a></li> */}
-            <li className='hover:text-[rgb(0,150,137)]'><a href="#contact">Contact</a></li>
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <a href={item.link}
+                 onClick={() => setHashUrlColor(item.link)}
+                 className={hashurlColor === item.link ? 'text-[rgb(0,150,137)] font-bold' : 'hover:text-teal-400 hover:font-semibold transition'}
+                >{item.name}</a>
+              </li>
+            ))}
           </ul>
         </div>
         <div>
