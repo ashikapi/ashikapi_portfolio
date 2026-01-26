@@ -16,9 +16,9 @@ const Header = () => {
   ];
   const [hashurlColor, setHashUrlColor] = useState('');
 
-  const handleDownload = () => {
-    alert("CV Downloaded successfully !");
-  }
+  // const handleDownload = () => {
+  //   alert("CV Downloaded successfully !");
+  // }
 
   return (
     <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 z-10'>
