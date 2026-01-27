@@ -20,8 +20,8 @@ const AboutMe = () => {
         <div className="flex justify-center items-center lg:mb-20 pt-5 mb-10">
           <h1 className="">
             <span className="text-xl sm:text-2xl font-semibold text-black">Get To Know More</span>
-            <span className="text-4xl sm:text-5xl font-extrabold text-[rgb(0,150,137)]"> About </span>
-            <span className="text-4xl sm:text-5xl text-[rgb(0,150,137)] font-extrabold">
+            <span className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl font-extrabold text-[rgb(0,150,137)]"> About </span>
+            <span className="lg:text-6xl md:text-4xl sm:text-3xl text-2xl text-[rgb(0,150,137)] font-extrabold">
               Me
             </span>
           </h1>
