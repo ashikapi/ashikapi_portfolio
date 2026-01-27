@@ -17,7 +17,7 @@ const AboutMe = () => {
       <div className="w-full max-w-7xl">
 
         {/* Heading */}
-        <div className="flex justify-center items-center lg:pt-20 lg:mb-20 pt-5 mb-10">
+        <div className="flex justify-center items-center lg:mb-20 pt-5 mb-10">
           <h1 className="">
             <span className="text-xl sm:text-2xl font-semibold text-black">Get To Know More</span>
             <span className="text-4xl sm:text-5xl font-extrabold text-[rgb(0,150,137)]"> About </span>
