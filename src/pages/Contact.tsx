@@ -15,7 +15,7 @@ const contactInfo = [
 
 const Contact = () => {
   return (
-    <div className="flex justify-center items-center px-6 sm:px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(15,23,43)] pb-8 pt-8">
+    <div className="flex justify-center items-center px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(15,23,43)] pb-8 pt-8">
       <div className="w-full max-w-7xl">
         {/* Heading */}
         <div>

@@ -65,7 +65,7 @@ const AboutMe = () => {
   {/* View CV Button */}
   <button
     onClick={() => setOpenCV(true)}
-    className="px-4 py-2 md:text-lg text-sm border-2 border-gray-600 bg-gray-800 font-bold text-teal-500 rounded-md
+    className="px-4 py-2 md:text-lg text-sm border-2 border-teal-50 bg-teal-600 font-bold text-white rounded-md
                transition-all duration-500 hover:scale-110 hover:text-[rgb(0,150,137)]"
   >
     View CV Now!
@@ -79,6 +79,7 @@ const AboutMe = () => {
     className={`flex items-center gap-2 px-4 py-2 rounded-md md:text-lg text-sm font-semibold text-white
       transition-all duration-500 animate-bounce hover:bg-red-700
       ${downloaded ? "bg-green-600" : "bg-red-500"}`}
+      style={{ animationDelay: "0.5s" }}
   >
     <FaDownload />
     {downloaded ? "Downloaded!" : "Download CV"}
