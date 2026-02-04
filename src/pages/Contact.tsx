@@ -6,6 +6,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { BsSendFill } from "react-icons/bs";
+import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const contactInfo = [
   { name: "Email", icon: <IoMdMail />, details: "ashikapi65@gmail.com", contact: 'mailto:ashikapi65@gmail.com' },
@@ -14,6 +16,65 @@ const contactInfo = [
 ];
 
 const Contact = () => {
+  const [successMsg, setSuccessMsg] = useState("");
+const [errorMsg, setErrorMsg] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState(
+    {
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    }
+  );
+  const handelChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData ({
+      ...formData,
+      [e.target.id]: e.target.value,
+    });
+  };
+
+  const handelSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    const templateParams = {
+  from_name: formData.name,
+  reply_to: formData.email,   // user email
+  name: formData.name,
+  email: formData.email,
+  subject: formData.subject,
+  message: formData.message,
+  time: new Date().toLocaleString(),
+};
+
+    emailjs
+    .send (
+      "service_wdmo32i",     // 👉 Your Service ID
+        "template_3relswe",    // 👉 Your Template ID
+        templateParams,
+        "b016vsZzXrJ33E53O"       // 👉 Your Public Key
+    )
+    .then(
+        () => {
+          setLoading(false);
+          setSuccessMsg("Message sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+          setTimeout(() => setSuccessMsg(""), 5000);
+        },
+        (error) => {
+          setLoading(false);
+          setErrorMsg("Failed to send message!");
+          setTimeout(() => setSuccessMsg(""), 5000);
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <div className="flex justify-center items-center px-6 md:px-10 lg:px-20 lg:py-20 bg-[rgb(15,23,43)] pb-8 pt-8">
       <div className="w-full max-w-7xl">
@@ -101,17 +162,24 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="flex justify-center items-center lg:mr-10 animate__animated animate__fadeInRight xl:p-10 lg:p-6 lg:bg-[rgb(30,41,57)] rounded-2xl w-full max-w-lg">
-            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col w-full gap-4 px-4">
+            <form onSubmit={handelSubmit}
+             className="flex flex-col w-full gap-4 px-4">
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   required
                   type="text"
+                  id="name"
+                  value={formData.name}
+                  onChange={handelChange}
                   className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full sm:w-1/2"
                   placeholder="Your Name"
                 />
                 <input
                   required
                   type="email"
+                  id="email"
+                  value={formData.email}
+                  onChange={handelChange}
                   className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full sm:w-1/2"
                   placeholder="Your Email"
                 />
@@ -119,16 +187,26 @@ const Contact = () => {
               <input
                 required
                 type="text"
+                id="subject"
+                value={formData.subject}
+                  onChange={handelChange}
                 className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full"
                 placeholder="Subject"
               />
               <textarea
                 required
+                id="message"
+                value={formData.message}
+                onChange={handelChange}
                 className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full h-40 resize-none"
                 placeholder="Write Your Message Here..."
               />
-              <button className="flex items-center justify-center gap-2 mt-4 px-6 py-3 text-white text-md font-bold border-none rounded-xl bg-teal-600 hover:bg-teal-700 shadow-2xl transition-transform duration-300 hover:scale-105">
-                Send Message <BsSendFill />
+              {successMsg && <p className="text-white px-4 py-2 rounded-sm bg-[#0f172b]/50 border border-teal-50/50 font-bold">{successMsg}</p>}
+              {errorMsg && <p className="text-red-500 px-4 py-2 rounded-sm bg-[#0f172b]/50 border border-red-50/50 font-bold">{errorMsg}</p>}
+              <button 
+               type="submit"
+               className="flex items-center justify-center gap-2 mt-4 px-6 py-3 text-white text-md font-bold border-none rounded-xl bg-teal-600 hover:bg-teal-700 shadow-2xl transition-transform duration-300 hover:scale-105">
+                {loading ? "Sending..." : "Send Message"}<BsSendFill />
               </button>
             </form>
           </div>
