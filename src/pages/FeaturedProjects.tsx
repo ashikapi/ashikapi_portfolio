@@ -7,6 +7,7 @@ import projectImage5 from '../images/project_image/akashadhikary.png';
 import projectImage6 from '../images/project_image/TravelAgency.png';
 import projectImage7 from '../images/project_image/Webify Academy.png';
 import projectImage8 from '../images/project_image/Build Core.png';
+import projectImage9 from '../images/project_image/Faith Fusion.png';
 
 
 const featuredetails = [
@@ -76,6 +77,13 @@ url: 'https://bmcbd.netlify.app/'
     Description: 'A modern construction company website showcasing projects, services, and team expertise with a responsive design and intuitive navigation.',
     Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
     url: 'https://build-core-project.vercel.app/'
+  },
+  {
+    img: projectImage9,
+    title: 'Faith Fusion',
+    Description: 'A modern E-commerce website for t-shirt sales, and panjabi sales, featuring a responsive design, intuitive navigation, and secure checkout process.',
+    Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
+    url: 'https://faith-fusion.vercel.app/'
   },
 ]
 
