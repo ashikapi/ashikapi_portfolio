@@ -29,7 +29,7 @@ url: '#'
     title: 'Velora (Online Shop)',
     Description: 'Modern fashion e-commerce UI with responsive design.',
     Tech: ['React', 'Type Script', 'Tailwind CSS'],
-    url: 'https://github.com/ashikapi/VELORA-online-shop'
+    url: 'https://veloraonlineshope.netlify.app/'
   },
 //   {
 //    title: 'Farmer Ecommerce Frontend',
