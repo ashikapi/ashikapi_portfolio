@@ -66,7 +66,8 @@ const Home = () => {
                             <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase '>Find Me In</h1>
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
                                 <button className='md:p-2 p-1 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-                                    <a target='_blanck' href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
+                                    <a target='_blank'
+rel="noopener noreferrer" href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
                                 </button>
                                 <button className='md:p-2 p-1 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
                                     <a target='_blank' href=""><FaTwitter /></a>
