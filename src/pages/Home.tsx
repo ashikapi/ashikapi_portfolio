@@ -20,7 +20,7 @@ const Home = () => {
                         <h1 className=' md:text-xl sm:text-lg text-lg lg:text-left md:text-center text-[rgb(3,204,184)]'>Hello, I am</h1>
                     </div>
                     <div className='mb-2'>
-                        <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:text-left md:text-center text-white font-extrabold text-uppercase animate__animated animate__fadeInUp animate__delay-1s'>Md. Ashikur Rahaman Api(অপি)</h2>
+                        <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:text-left md:text-center text-white font-extrabold text-uppercase animate__animated animate__fadeInUp animate__delay-1s'>Md. Ashikur Rahaman Api <span className="text-[rgb(3,204,184)]">(অপি)</span></h2>
                     </div>
                     <div>
                         <h1 className='lg:text-3xl md:text-2xl sm:text-xl lg:text-left md:text-center text-[rgb(198,208,220)] font-bold animate__animated animate__fadeInUp animate__delay-2s'><Typewriter
