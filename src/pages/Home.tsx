@@ -28,7 +28,7 @@ const Home = () => {
                         md:text-center text-white font-extrabold text-uppercase animate__animated animate__fadeInUp 
                         animate__delay-1s'>
                             Md. Ashikur Rahaman Api
-                            <span className="text-[rgb(3,204,184)]">(অপি)</span>
+                            <span className="text-[rgb(3,204,184)]"> (অপি)</span>
                         </h2>
                     </div>
                     <div>

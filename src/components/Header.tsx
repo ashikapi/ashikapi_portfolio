@@ -21,18 +21,20 @@ const Header = () => {
   // }
 
   return (
-    <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 z-10'>
+    <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 z-10 cursor-none'>
       <div className='md:flex md:justify-evenly flex justify-between items-center '>
         {/* Logo & Name */}
         <div className='flex items-center lg:gap-3 md:gap-2 gap-3 md:mr-1'>
-          <a href="#home">
+          <a href="#home"
+          className='cursor-none'>
             {/* <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src="https://i.postimg.cc/zXKzKsyp/logo.png" alt="Ashik" /></a> */}
-            <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={logo} alt="Ashik" /></a>
-          <a href="#home">
+            <img className='lg:w-9 lg:h-10 md:w-6 md:h-6 w-9 h-10 rounded-full ring-2 ring-green-300' src={logo} alt="Ashik Api | web developer logo" /></a>
+          <a href="#home"
+          className='cursor-none'>
             {/* <h1 className='text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase'>
             Ashik Api <span className=''>.</span>
           </h1> */}
-            <h1 className="relative inline-block text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase">
+            <h1 className="relative cursor-none inline-block text-xl xl:text-4xl lg:text-2xl md:text-lg sm:text-xl text-[rgb(0,213,190)] font-bold uppercase">
               Ashik Api
               <span className="absolute -right-4 top-2/3 -translate-y-1/2 flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[rgb(0,213,190)] opacity-75"></span>
@@ -49,14 +51,14 @@ const Header = () => {
               <li key={index}>
                 <a href={item.link}
                   onClick={() => setHashUrlColor(item.link)}
-                  className={hashurlColor === item.link ? 'text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]' : 'hover:text-teal-400 hover:font-semibold transition'}
+                  className={hashurlColor === item.link ? 'cursor-none text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]' : 'cursor-none hover:text-teal-400 hover:font-semibold transition'}
                 >{item.name}</a>
               </li>
             ))}
             <li>
               <button
                 onClick={() => setOpenCV(true)}
-                className="transition-colors duration-300 hover:text-[rgb(0,150,137)]"
+                className="transition-colors cursor-none duration-300 hover:text-[rgb(0,150,137)]"
               >
                 My Resume
               </button>
@@ -68,8 +70,8 @@ const Header = () => {
                 onClick={() => setHashUrlColor('#contact')}
                 className={
                   hashurlColor === '#contact'
-                    ? 'text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]'
-                    : 'hover:text-teal-400 transition'
+                    ? 'cursor-none text-[rgb(0,150,137)] font-bold border-b-2 border-b-[rgb(0,150,137)]'
+                    : 'cursor-none hover:text-teal-400 transition'
                 }
               >
                 Contact
@@ -80,7 +82,7 @@ const Header = () => {
         <div>
           <ul className='hidden md:flex justify-evenly items-center text-slate-50 font-semibold lg:text-lg md:text-sm text-lg list-none gap-6 lg:mr-4 md:ml-2'>
             <li>
-              <a className='lg:px-4 lg:py-2 md:px-2 md:py-1 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase md:animate-bounce duration-1000 inline-block' href="#contact">Hire Me</a>
+              <a className='lg:px-4 lg:py-2 md:px-2 md:py-1 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase md:animate-bounce duration-1000 inline-block cursor-none' href="#contact">Hire Me</a>
             </li>
           </ul>
         </div>
@@ -105,7 +107,7 @@ const Header = () => {
           <li>
             <a
               onClick={() => setMenuOpen(false)}
-              className='block text-center mt-2 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase'
+              className='block cursor-none text-center mt-2 px-4 py-2 bg-[rgb(0,150,137)] hover:bg-teal-700 rounded-3xl uppercase'
               href="#contact"
             >
               Hire Me
