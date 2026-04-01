@@ -121,7 +121,7 @@ const [errorMsg, setErrorMsg] = useState("");
                   <div>
                     <p className="italic text-xl text-white font-bold">{contact.name}</p>
                     {contact.contact ? (
-                      <a href={contact.contact} className="text-lg text-[rgb(135,154,173)] font-semibold opacity-80 hover:text-teal-400">
+                      <a href={contact.contact} className="text-lg cursor-none text-[rgb(135,154,173)] font-semibold opacity-80 hover:text-teal-400">
                         {contact.details}
                       </a>
                     ) : (
@@ -136,24 +136,51 @@ const [errorMsg, setErrorMsg] = useState("");
             <div className="mt-8">
               <h2 className="text-2xl text-white mb-4">Connect With Me</h2>
               <div className="flex gap-4 text-xl animation-translateA">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1YwWi3fj7H/">
-                  <button className="p-2 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
+                <a target="_blank"
+                 rel="noopener noreferrer"
+                 href="https://www.facebook.com/share/1YwWi3fj7H/"
+                 className="cursor-none"
+                 >
+                  <button className="p-2 bg-black cursor-none text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
                     <FaSquareFacebook />
+                    <span className="sr-only">
+                      Ashik Api Facebook Profile
+                    </span>
                   </button>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="">
-                  <button className="p-2 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
+                <a target="_blank" 
+                 rel="noopener noreferrer"
+                 href="https://x.com/AshikApi89119"
+                 className="cursor-none"
+                 >
+                  <button className="p-2 bg-black cursor-none text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
                     <FaTwitter />
+                    <span className="sr-only">
+                      Ashik Api Twitter Profile
+                    </span>
                   </button>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ashik-api-767765341">
-                  <button className="p-2 bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
+                <a target="_blank"
+                 rel="noopener noreferrer"
+                 href="https://www.linkedin.com/in/ashik-api-767765341"
+                 className="cursor-none"
+                 >
+                  <button className="p-2 bg-black cursor-none text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
                     <FaLinkedinIn />
+                    <span className="sr-only">
+                      Ashik Api LinkedIn Profile
+                    </span>
                   </button>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ashikapi">
-                  <button className="p-2 bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
+                <a target="_blank"
+                 rel="noopener noreferrer" 
+                 href="https://github.com/ashikapi"
+                 className="cursor-none">
+                  <button className="p-2 bg-black cursor-none text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 transform scale-105 duration-200">
                     <FaGithubSquare />
+                    <span className="sr-only">
+                      Ashik Api GitHub Profile
+                    </span>
                   </button>
                 </a>
               </div>
@@ -171,7 +198,7 @@ const [errorMsg, setErrorMsg] = useState("");
                   id="name"
                   value={formData.name}
                   onChange={handelChange}
-                  className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full sm:w-1/2"
+                  className="bg-gray-700 cursor-none text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full sm:w-1/2"
                   placeholder="Your Name"
                 />
                 <input
@@ -180,7 +207,7 @@ const [errorMsg, setErrorMsg] = useState("");
                   id="email"
                   value={formData.email}
                   onChange={handelChange}
-                  className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full sm:w-1/2"
+                  className="bg-gray-700 cursor-none text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full sm:w-1/2"
                   placeholder="Your Email"
                 />
               </div>
@@ -190,7 +217,7 @@ const [errorMsg, setErrorMsg] = useState("");
                 id="subject"
                 value={formData.subject}
                   onChange={handelChange}
-                className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full"
+                className="bg-gray-700 cursor-none text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full"
                 placeholder="Subject"
               />
               <textarea
@@ -198,14 +225,14 @@ const [errorMsg, setErrorMsg] = useState("");
                 id="message"
                 value={formData.message}
                 onChange={handelChange}
-                className="bg-gray-700 text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full h-40 resize-none"
+                className="bg-gray-700 cursor-none text-white px-4 py-3 rounded-lg focus:outline-none focus:border-teal-400 w-full h-40 resize-none"
                 placeholder="Write Your Message Here..."
               />
               {successMsg && <p className="text-white px-4 py-2 rounded-sm bg-[#0f172b]/50 border border-teal-50/50 font-bold">{successMsg}</p>}
               {errorMsg && <p className="text-red-500 px-4 py-2 rounded-sm bg-[#0f172b]/50 border border-red-50/50 font-bold">{errorMsg}</p>}
               <button 
                type="submit"
-               className="flex items-center justify-center gap-2 mt-4 px-6 py-3 text-white text-md font-bold border-none rounded-xl bg-teal-600 hover:bg-teal-700 shadow-2xl transition-transform duration-300 hover:scale-105">
+               className="flex items-center cursor-none justify-center gap-2 mt-4 px-6 py-3 text-white text-md font-bold border-none rounded-xl bg-teal-600 hover:bg-teal-700 shadow-2xl transition-transform duration-300 hover:scale-105">
                 {loading ? "Sending..." : "Send Message"}<BsSendFill />
               </button>
             </form>
