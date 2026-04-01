@@ -17,41 +17,55 @@ const Home = () => {
             <div className='lg:flex lg:justify-evenly lg:items-center'>
                 <div className=' animate__animated animate__fadeInLeft animate__delay-1s'>
                     <div className='mb-2'>
-                        <h1 className=' md:text-xl sm:text-lg text-lg lg:text-left md:text-center text-[rgb(3,204,184)]'>Hello, I am</h1>
+                        <h1 className=' md:text-xl sm:text-lg text-lg lg:text-left
+                         md:text-center text-[rgb(3,204,184)]'
+                        >
+                            Hello, I am
+                        </h1>
                     </div>
                     <div className='mb-2'>
-                        <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:text-left md:text-center text-white font-extrabold text-uppercase animate__animated animate__fadeInUp animate__delay-1s'>Md. Ashikur Rahaman Api <span className="text-[rgb(3,204,184)]">(অপি)</span></h2>
+                        <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-lg lg:text-left 
+                        md:text-center text-white font-extrabold text-uppercase animate__animated animate__fadeInUp 
+                        animate__delay-1s'>
+                            Md. Ashikur Rahaman Api
+                            <span className="text-[rgb(3,204,184)]">(অপি)</span>
+                        </h2>
                     </div>
                     <div>
-                        <h1 className='lg:text-3xl md:text-2xl sm:text-xl lg:text-left md:text-center text-[rgb(198,208,220)] font-bold animate__animated animate__fadeInUp animate__delay-2s'><Typewriter
-                            words={
-                                [
-                                    "MERN Stack Developer .",
-                                    "React Frontend Developer .",
-                                    "Next.js Frontend Developer .",
-                                    "Web Developer .",
-                                    "Freelancer .",
-                                    "Designer .",
-                                    "C & C++ Programmer .",
-                                    "Python Learner .",
-                                    "JavaScript Enthusiast .",
-                                    "TypeScript Enthusiast .",
-                                    "SEO Executive .",
-                                    "Canva Specialist .",
-                                    "MS Office Expert .",
-                                    "MySQL & PHP Developer ."
-                                ]
-                            }
-                            loop={true}
-                            cursor
-                            cursorStyle="|"
-                            typeSpeed={70}
-                            deleteSpeed={50}
-                            delaySpeed={1000} />
+                        <h1 className='lg:text-3xl md:text-2xl sm:text-xl lg:text-left md:text-center 
+                        text-[rgb(198,208,220)] font-bold animate__animated animate__fadeInUp animate__delay-2s'><Typewriter
+                                words={
+                                    [
+                                        "MERN Stack Developer .",
+                                        "React Frontend Developer .",
+                                        "Next.js Frontend Developer .",
+                                        "Web Developer .",
+                                        "Freelancer .",
+                                        "Designer .",
+                                        "C & C++ Programmer .",
+                                        "Python Learner .",
+                                        "JavaScript Enthusiast .",
+                                        "TypeScript Enthusiast .",
+                                        "SEO Executive .",
+                                        "Canva Specialist .",
+                                        "MS Office Expert .",
+                                        "MySQL & PHP Developer ."
+                                    ]
+                                }
+                                loop={true}
+                                cursor
+                                cursorStyle="|"
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000} />
                         </h1>
                     </div>
                     <div className='mt-4 animate__animated animate__fadeInUp animate__delay-3s'>
-                        <p className='text-[rgb(140,155,148)] lg:text-lg md:text-lg sm:text-lg lg:text-left md:text-center'>I transform ideas into smooth, secure, and scalable web solutions <br />using modern technologies and clean design.</p>
+                        <p className='text-[rgb(140,155,148)] lg:text-lg md:text-lg sm:text-lg 
+                         lg:text-left md:text-center'
+                         >
+                            I transform ideas into smooth, secure, and scalable web solutions <br />using modern technologies and clean design.
+                        </p>
                     </div>
                     {/* getin touch and view work buttons */}
                     <div className='lg:mt-8 md:flex md:justify-evenly grid grid-cols-2 lg:space-x-0 space-x-6 mt-4 animate__animated animate__fadeInUp animate__delay-5s'>
@@ -65,18 +79,47 @@ const Home = () => {
                         <div className='lg:mt-8 lg:ml-0 md:ml-38 animate__animated animate__fadeInUp animate__delay-6s'>
                             <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase '>Find Me In</h1>
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
-                                <button className='md:p-2 p-1 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
+                                <button
+                                    className='md:p-2 p-1 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl
+                                 hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'
+                                >
                                     <a target='_blank'
-rel="noopener noreferrer" href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
+                                        rel="noopener noreferrer"
+                                        href="https://www.facebook.com/share/1YwWi3fj7H/">
+                                        <FaSquareFacebook />
+                                        <span className='sr-only'>Ashik Api Facebook Profile</span>
+                                    </a>
                                 </button>
-                                <button className='md:p-2 p-1 bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-                                    <a target='_blank' href=""><FaTwitter /></a>
+                                <button className='md:p-2 p-1 bg-black text-[#1DA1F2] shadow-md 
+                                shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform 
+                                hover:translate-2 scale-105 duration-200'>
+                                    <a target='_blank'
+                                        href="https://x.com/AshikApi89119"
+                                        rel='noopener noreferrer'>
+                                        <FaTwitter />
+                                        <span className='sr-only'>Ashik Api Twitter Profile</span>
+                                    </a>
                                 </button>
-                                <button className='md:p-2 p-1 bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-                                    <a target='_blank' href="https://www.linkedin.com/in/ashik-api-767765341"><FaLinkedinIn /></a>
+                                <button
+                                    className='md:p-2 p-1 bg-black text-[#0A66C2] shadow-md shadow-gray-300 
+                                rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 
+                                duration-200'
+                                >
+                                    <a target='_blank'
+                                        href="https://www.linkedin.com/in/ashik-api-767765341"
+                                        rel='noopener noreferrer'>
+                                        <FaLinkedinIn />
+                                        <span className='sr-only'>Ashik Api Linkedin profile</span>
+                                    </a>
                                 </button>
-                                <button className='md:p-2 p-1 bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-                                    <a target='_blank' href="https://github.com/ashikapi"><FaGithubSquare /></a>
+                                <button className='md:p-2 p-1 bg-black text-[#fafbfc] shadow-md 
+                                shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer 
+                                transform hover:translate-2 scale-105 duration-200'>
+                                    <a target='_blank'
+                                        href="https://github.com/ashikapi"
+                                        rel='noopener noreferrer'>
+                                        <FaGithubSquare />
+                                        <span className='sr-only'>Ashik Api Github Profile</span></a>
                                 </button>
                             </div>
                         </div>
@@ -84,18 +127,47 @@ rel="noopener noreferrer" href="https://www.facebook.com/share/1YwWi3fj7H/"><FaS
 
                             <h1 className='lg:text-2xl md:text-xl text-lg text-[rgb(148,161,173)] uppercase'>Best Skill On</h1>
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
-                                <button className='md:p-2 p-1 bg-black text-blue-300 shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiReactjsLine /></button>
-                                <button className='md:p-2 p-1 bg-black text-[#3C873A] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><FaNodeJs /></button>
-                                <button className='md:p-2 p-1 bg-black text-blue-400 shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><RiTailwindCssFill /></button>
-                                <button className='md:p-2 p-1 bg-black text-[#F06529] shadow-md shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'><SiHtml5 /></button>
+                                <button
+                                    className='md:p-2 p-1 bg-black text-blue-300 shadow-md 
+                                shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform 
+                                 hover:translate-2 scale-105 duration-200'
+                                >
+                                    <RiReactjsLine />
+                                </button>
+                                <button
+                                    className='md:p-2 p-1 bg-black text-[#3C873A] shadow-md 
+                                shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform 
+                                 hover:translate-2 scale-105 duration-200'
+                                >
+                                    <FaNodeJs />
+                                </button>
+                                <button
+                                    className='md:p-2 p-1 bg-black text-blue-400 shadow-md 
+                                shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform 
+                                 hover:translate-2 scale-105 duration-200'
+                                >
+                                    <RiTailwindCssFill />
+                                </button>
+                                <button
+                                    className='md:p-2 p-1 bg-black text-[#F06529] shadow-md 
+                                shadow-gray-300 rounded-xl  hover:text-red-500 cursor-pointer transform 
+                                 hover:translate-2 scale-105 duration-200'
+                                >
+                                    <SiHtml5 />
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center lg:rotate-6 lg:hover:rotate-0 transform transition-all duration-700 hover:scale-105 justify-center p-1 lg:ml-0 lg:mr-0 md:ml-60 md:mr-60 sm:ml-50 sm:mr-50 ml-8
+                <div className='flex items-center lg:rotate-6 lg:hover:rotate-0 transform transition-all 
+                 duration-700 hover:scale-105 justify-center p-1 lg:ml-0 lg:mr-0 md:ml-60 md:mr-60 sm:ml-50 sm:mr-50 ml-8
                  mr-8 rounded-xl bg-gradient-to-tr from-cyan-400 via-yellow-200 to-orange-500'>
                     <div className="bg-[#1e293b] p-2 rounded-2xl">
-                        <img className='w-80 rounded-xl ' src="https://i.postimg.cc/V6FY2ncF/Ashik-Api.jpg" alt="Ashik Api web developer profile picture" /></div></div>
+                        <img className='w-80 rounded-xl '
+                            src="https://i.postimg.cc/V6FY2ncF/Ashik-Api.jpg"
+                            alt="Ashik Api web developer profile picture" />
+                    </div>
+                </div>
             </div>
         </div>
     )
