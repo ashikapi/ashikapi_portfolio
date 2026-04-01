@@ -66,7 +66,7 @@ const AboutMe = () => {
   <button
     onClick={() => setOpenCV(true)}
     className="px-4 py-2 md:text-lg text-sm border-2 border-teal-50 bg-teal-600 font-bold text-white rounded-md
-               transition-all duration-500 hover:scale-110 hover:text-white/70"
+               transition-all duration-500 hover:scale-110 hover:text-white/70 cursor-none"
   >
     View CV Now!
   </button>
@@ -74,10 +74,11 @@ const AboutMe = () => {
   {/* Download CV */}
   <a
     href="/Md.Ashikur-Rahaman-Api-CV.pdf"
+    rel="noopener noreferrer"
     download
     onClick={handleDownload}
     className={`flex items-center gap-2 px-4 py-2 rounded-md md:text-lg text-sm font-semibold text-white
-      transition-all duration-500 animate-bounce hover:bg-red-700
+      transition-all duration-500 animate-bounce hover:bg-red-700 cursor-none
       ${downloaded ? "bg-green-600" : "bg-red-500"}`}
       style={{ animationDelay: "0.5s" }}
   >
