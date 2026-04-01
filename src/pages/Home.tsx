@@ -69,9 +69,13 @@ const Home = () => {
                     </div>
                     {/* getin touch and view work buttons */}
                     <div className='lg:mt-8 md:flex md:justify-evenly grid grid-cols-2 lg:space-x-0 space-x-6 mt-4 animate__animated animate__fadeInUp animate__delay-5s'>
-                        <a href="mailto:ashikapi65@gmail.com"><button className='md:px-6 md:py-2.5 lg:px-4 lg:py-3 px-4 py-2.5 lg:mr-70 bg-[rgb(0,150,137)] hover:bg-teal-700 text-white font-bold 
+                        <a href="mailto:ashikapi65@gmail.com"
+                        className='cursor-none'>
+                            <button className='md:px-6 md:py-2.5 lg:px-4 lg:py-3 px-4 py-2.5 lg:mr-70 bg-[rgb(0,150,137)] hover:bg-teal-700 text-white font-bold 
                          text-lg rounded-md transform hover:transition hover:scale-110 duration-500 cursor-none'>Get In Touch</button></a>
-                        <a href="#project"><button className='lg:px-6 lg:py-2 px-6 py-2 lg:mr-18 md:ml-0 sm:ml-0 ml-4 text-lg border-gray-600 bg-gray-800 lg:bg-[rgb(255,255,255)] font-bold text-white border-2 hover:border-gray-600 
+                        <a href="#project"
+                        className='cursor-none'>
+                            <button className='lg:px-6 lg:py-2 px-6 py-2 lg:mr-18 md:ml-0 sm:ml-0 ml-4 text-lg border-gray-600 bg-gray-800 lg:bg-[rgb(255,255,255)] font-bold text-white border-2 hover:border-gray-600 
                         rounded-md hover:bg-gray-800 transform hover:transition hover:scale-110 duration-500 cursor-none'>View Work</button></a>
                     </div>
                     {/* find me in button */}
@@ -81,21 +85,21 @@ const Home = () => {
                             <div className='lg:text-xl md:text-lg text-white mt-4 lg:space-x-6 space-x-4 '>
                                 <button
                                     className='md:p-2 p-1 bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl
-                                 hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'
+                                 hover:text-red-500 cursor-none transform hover:translate-2 scale-105 duration-200'
                                 >
                                     <a target='_blank'
                                         rel="noopener noreferrer"
-className="cursor-none"
+                                        className="cursor-none"
                                         href="https://www.facebook.com/share/1YwWi3fj7H/">
                                         <FaSquareFacebook />
                                         <span className='sr-only'>Ashik Api Facebook Profile</span>
                                     </a>
                                 </button>
                                 <button className='md:p-2 p-1 bg-black text-[#1DA1F2] shadow-md 
-                                shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform 
+                                shadow-gray-300 rounded-xl hover:text-red-500 cursor-none transform 
                                 hover:translate-2 scale-105 duration-200'>
                                     <a target='_blank'
-className="cursor-none"
+                                        className="cursor-none"
                                         href="https://x.com/AshikApi89119"
                                         rel='noopener noreferrer'>
                                         <FaTwitter />
@@ -104,11 +108,11 @@ className="cursor-none"
                                 </button>
                                 <button
                                     className='md:p-2 p-1 bg-black text-[#0A66C2] shadow-md shadow-gray-300 
-                                rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 
+                                rounded-xl hover:text-red-500 cursor-none transform hover:translate-2 scale-105 
                                 duration-200'
                                 >
                                     <a target='_blank'
-className="cursor-none"
+                                        className="cursor-none"
                                         href="https://www.linkedin.com/in/ashik-api-767765341"
                                         rel='noopener noreferrer'>
                                         <FaLinkedinIn />
@@ -116,10 +120,10 @@ className="cursor-none"
                                     </a>
                                 </button>
                                 <button className='md:p-2 p-1 bg-black text-[#fafbfc] shadow-md 
-                                shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer 
+                                shadow-gray-300 rounded-xl hover:text-red-500 cursor-none 
                                 transform hover:translate-2 scale-105 duration-200'>
                                     <a target='_blank'
-className="cursor-none"
+                                        className="cursor-none"
                                         href="https://github.com/ashikapi"
                                         rel='noopener noreferrer'>
                                         <FaGithubSquare />
