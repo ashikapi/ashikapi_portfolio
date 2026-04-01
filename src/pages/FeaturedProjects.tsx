@@ -100,7 +100,10 @@ const FeaturedProjects = () => {
       key={index}
       className="group flex flex-col bg-white shadow-sm shadow-gray-300 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-gray-400 transition-shadow duration-300"
     >
-      <a href={project.url} target="_blank" rel="noopener noreferrer">
+      <a href={project.url} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="cursor-none">
         <img
           src={project.img}
           alt={project.title}
@@ -132,7 +135,9 @@ const FeaturedProjects = () => {
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-auto flex justify-center items-center w-full p-2 border border-[rgb(90,185,177)] text-[rgb(8,157,153)] rounded-xl gap-2 text-xl hover:bg-teal-50 hover:text-black font-semibold"
+          className="mt-auto flex justify-center items-center w-full p-2 border border-[rgb(90,185,177)] 
+          text-[rgb(8,157,153)] rounded-xl gap-2 text-xl hover:bg-teal-50 hover:text-black font-semibold
+          cursor-none transition-colors duration-300"
         >
           <TbWindowMinimize /> Visit Now
         </a>
