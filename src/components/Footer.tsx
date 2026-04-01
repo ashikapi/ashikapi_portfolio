@@ -15,17 +15,53 @@ const Footer = () => {
 
         <div className='lg:mt-4 mt-4'>
           <div className='text-xl text-white mt-4 space-x-6 '>
-            <button className='p-2 animation-roteIconB bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-              <a target='_blanck' href="https://www.facebook.com/share/1YwWi3fj7H/"><FaSquareFacebook /></a>
+            <button className='p-2 animation-roteIconB bg-black text-[#1877F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-none transform hover:translate-2 scale-105 duration-200'>
+              <a 
+              target='_blank'
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/share/1YwWi3fj7H/"
+              className="cursor-none"
+              >
+                <FaSquareFacebook />
+                <span className="sr-only">
+                  Ashik Api Facebook Profie
+                </span>
+              </a>
             </button>
-            <button className='p-2 animation-roteIconB bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-              <a target='_blank' href=""><FaTwitter /></a>
+            <button className='p-2 animation-roteIconB bg-black text-[#1DA1F2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-none transform hover:translate-2 scale-105 duration-200'>
+              <a target='_blank'
+              rel="noopener noreferrer"
+               className="cursor-none"
+               href="https://x.com/AshikApi89119"
+               >
+                <FaTwitter />
+                <span className="sr-only">
+                  Ashik Api Twitter Profile
+                </span>
+              </a>
             </button>
-            <button className='p-2 animation-roteIconA bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-              <a target='_blank' href="https://www.linkedin.com/in/ashik-api-767765341"><FaLinkedinIn /></a>
+            <button className='p-2 animation-roteIconA bg-black text-[#0A66C2] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-none transform hover:translate-2 scale-105 duration-200'>
+              <a target='_blank'
+               href="https://www.linkedin.com/in/ashik-api-767765341"
+               rel="noopener noreferrer"
+               className="cursor-none">
+                <FaLinkedinIn />
+                <span className="sr-only">
+                  Ashik Api LinkedIn Profile
+                </span>
+              </a>
             </button>
-            <button className='p-2 animation-roteIconA bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-pointer transform hover:translate-2 scale-105 duration-200'>
-              <a target='_blank' href="https://github.com/ashikapi"><FaGithubSquare /></a>
+            <button className='p-2 animation-roteIconA bg-black text-[#fafbfc] shadow-md shadow-gray-300 rounded-xl hover:text-red-500 cursor-none transform hover:translate-2 scale-105 duration-200'>
+              <a target='_blank'
+              href="https://github.com/ashikapi"
+              rel="noopener noreferrer"
+              className="cursor-none"
+              >
+                <FaGithubSquare />
+                <span className="sr-only">
+                  Ashik Api GitHub Profile
+                </span>
+              </a>
             </button>
           </div>
         </div>
@@ -36,8 +72,22 @@ const Footer = () => {
         <div className='text-center'>
           <div className="text-[rgb(136,147,162)]">© {currentYear} Ashik Api. All rights reserved.</div>
           <div className='mt-1 sm:mb-0 mb-1 space-x-1  text-[rgb(136,147,162)] '>
-            <button className="hover:text-teal-400"><a href="#home">Privacy Policy</a></button>
-            <button className="hover:text-teal-400"><a href="#home">Terms of Service</a></button>
+            <button className="hover:text-teal-400">
+              <a href="#home"
+               rel="noopener noreferrer"
+               className="cursor-none"
+               >
+                Privacy Policy
+              </a>
+            </button>
+            <button className="hover:text-teal-400">
+              <a href="#home"
+               rel="noopener noreferrer"
+               className="cursor-none"
+               >
+                Terms of Service
+              </a>
+            </button>
           </div>
         </div>
       </div>
