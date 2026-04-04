@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import star from "../images/wind-rose (1).png";
 
-const CustomCursor = () => {
+type Props = {
+className?: string
+}
+const CustomCursor = ({className}: Props) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -17,7 +20,7 @@ const CustomCursor = () => {
     <img
       src={star}
       alt="cursor"
-      className="fixed w-10 h-10 pointer-events-none z-50 transition-transform ease-out"
+      className={`fixed w-10 h-10 pointer-events-none z-50 transition-transform ease-out ${className}`}
       style={{
         // transform: `translate(${position.x}px, ${position.y}px)`
         transform: `translate(${position.x - 24}px, ${position.y - 24}px)`
