@@ -6,7 +6,7 @@ import CustomCursor from './CustomCursor'
 const Layout = () => {
   return (
     <div className='cursor-none'>
-      <CustomCursor />
+      <CustomCursor className="md:block hidden" />
         <Header/>
         <main className='pt-16 cursor-none'>
         <Hero/>
