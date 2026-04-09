@@ -37,12 +37,14 @@ const AboutMe = () => {
         <div className='flex flex-col lg:flex-row items-center justify-evenly gap-10'>
 
           {/* Image */}
-          <div className="flex justify-center hover:-rotate-2 transform transition-all duration-700 hover:scale-105">
+          <div className="flex justify-center hover:-rotate-2 transform transition-all duration-700 hover:scale-105 relative group overflow-hidden">
             <img
               className='xl:w-96 lg:w-full w-64 rounded-3xl shadow-2xl shadow-gray-400'
               src="https://i.postimg.cc/02w4Qxbn/Api.jpg"
               alt="Ashik Api about me section photo"
             />
+            <div className="absolute inset-0"></div>
+            <div className="shine"></div>
           </div>
 
           {/* Info Text */}

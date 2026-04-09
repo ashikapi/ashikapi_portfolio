@@ -36,3 +36,37 @@
 .animation-translateA {
   animation: translateA 4s ease-in-out infinite;
 }
+
+/* Image Shine Effect */
+
+.shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 5%;
+  height: 100%;
+  transform: skewX(-25deg);
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  opacity: 0;
+  
+}
+
+.group:hover .shine {
+  animation: shine 1.5s ease-in-out;
+  opacity: 1;
+ 
+}
+
+@keyframes shine {
+  0% {
+    left: -60%;
+  }
+  100% {
+    left: 150%;
+  }
+}

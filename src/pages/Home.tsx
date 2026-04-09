@@ -171,9 +171,15 @@ const Home = () => {
                  duration-700 hover:scale-105 justify-center p-1 lg:ml-0 lg:mr-0 md:ml-60 md:mr-60 sm:ml-50 sm:mr-50 ml-8
                  mr-8 rounded-xl bg-gradient-to-tr from-cyan-400 via-yellow-200 to-orange-500'>
                     <div className="bg-[#1e293b] p-2 rounded-2xl">
+                        <div className='relative group overflow-hidden'>
                         <img className='w-80 rounded-xl '
                             src="https://i.postimg.cc/V6FY2ncF/Ashik-Api.jpg"
                             alt="Ashik Api web developer profile picture" />
+                            <div className='absolute inset-0'
+                             >
+                            </div>
+                            <div className='shine'></div>
+                            </div>
                     </div>
                 </div>
             </div>
