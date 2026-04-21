@@ -34,12 +34,12 @@ const AboutMe = () => {
         </div> */}
 
         {/* Main Content */}
-        <div className='flex flex-col lg:flex-row items-center justify-evenly gap-10'>
+        <div className='w-full flex flex-col lg:flex-row items-center justify-evenly gap-10'>
 
           {/* Image */}
-          <div className="flex justify-center hover:-rotate-2 transform transition-all duration-700 hover:scale-105 relative group overflow-hidden">
+          <div className="w-full lg:w-1/2 flex justify-center hover:-rotate-2 transform transition-all duration-700 hover:scale-105 relative group overflow-hidden rounded-3xl">
             <img
-              className='xl:w-96 lg:w-full w-64 rounded-3xl shadow-2xl shadow-gray-400'
+              className='lg:w-2xl md:w-96 w-72 rounded-3xl shadow-sm shadow-gray-400'
               src="https://i.postimg.cc/02w4Qxbn/Api.jpg"
               alt="Ashik Api about me section photo"
             />
@@ -48,10 +48,10 @@ const AboutMe = () => {
           </div>
 
           {/* Info Text */}
-          <div className='text-center lg:text-left max-w-2xl'>
-            <h1 className='text-2xl sm:text-3xl md:text-4xl text-[rgb(0,150,137)] font-extrabold mb-4'>
+          <div className='w-full lg:w-1/2 text-center lg:text-left max-w-2xl'>
+            <h2 className='text-2xl sm:text-3xl md:text-4xl text-[rgb(0,150,137)] font-extrabold mb-4'>
               Who am I?
-            </h1>
+            </h2>
             <p className='text-base sm:text-lg md:text-xl text-gray-500'>
               I’m a passionate and self-driven MERN Stack Developer with skills in React, TypeScript, Tailwind CSS, JavaScript, and MySQL. I also work with C, C++, Python, and PHP. Alongside web development, I have hands-on experience in SEO, Canva design, and MS Office. I love turning ideas into functional, user-friendly, and creative digital solutions.
             </p>

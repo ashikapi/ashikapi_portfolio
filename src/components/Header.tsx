@@ -21,7 +21,7 @@ const Header = () => {
   // }
 
   return (
-    <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 z-10 cursor-none'>
+    <div className='w-full lg:p-4 md:p-6 p-4 bg-slate-900 fixed top-0 z-10 cursor-none border-b-2 border-b-[rgb(0,150,137)]'>
       <div className='md:flex md:justify-evenly flex justify-between items-center '>
         {/* Logo & Name */}
         <div className='flex items-center lg:gap-3 md:gap-2 gap-3 md:mr-1'>
