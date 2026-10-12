@@ -161,8 +161,8 @@ const Home = () => {
                     <div 
                      className="bg-[#1e293b] p-2 rounded-2xl"
                     >
-                        <div className='relative group overflow-hidden'>
-                        <img className='sm:w-80 w-60 sm:scale-0 scale-150 transform transition-all duration-700 group-hover:scale-200 rounded-xl '
+                        <div className='relative group overflow-hidden rounded-lg'>
+                        <img className='sm:w-80 w-60 sm:scale-100 scale-150 transform transition-all duration-700 group-hover:scale-200 rounded-xl '
                             // src="https://i.postimg.cc/V6FY2ncF/Ashik-Api.jpg"
                             src={profile}
                             alt="Ashik Api web developer profile picture" />
