@@ -8,6 +8,9 @@ import projectImage6 from '../images/project_image/TravelAgency.png';
 import projectImage7 from '../images/project_image/Webify Academy.png';
 import projectImage8 from '../images/project_image/Build Core.png';
 import projectImage9 from '../images/project_image/Faith Fusion.png';
+import projectImage10 from '../images/project_image/Tradexcel_Ceramics_Limited.png';
+import projectImage11 from '../images/project_image/SSBC_Limited.png';
+import projectImage12 from '../images/project_image/kstextilepk.png';
 
 
 const featuredetails = [
@@ -48,7 +51,7 @@ url: '#'
     title: 'BMCBD – CIPS-Focused Corporate Website',
 Description: 'A frontend-developed corporate website for a CIPS-focused organization, featuring responsive layout, structured content, and optimized performance.',
 Tech:[ 'React', 'Tailwind CSS', 'Type Script' ],
-url: 'https://bmcbd.netlify.app/'
+url: 'https://www.bmcbd.org/'
   },
   {
     img: projectImage5,
@@ -85,6 +88,27 @@ url: 'https://bmcbd.netlify.app/'
     Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
     url: 'https://faith-fusion.vercel.app/'
   },
+  {
+  img: projectImage10,
+  title: 'Tradexcel Ceramics',
+  Description: 'A modern, responsive corporate website showcasing ceramic bricks, wall cladding, and roof tiles with an intuitive user interface.',
+  Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
+  url: 'https://www.tradexcelceramics.com/'
+},
+{
+  img: projectImage11,
+  title: 'SSBC Limited',
+  Description: 'A modern interior design website showcasing residential, corporate, and industrial projects with architectural and landscape design solutions.',
+  Tech: ['Next.Js', 'Type Script', 'Tailwind CSS'],
+  url: 'https://www.ssbclimited.com/'
+},
+{
+  img: projectImage12,
+  title: 'KS Textile',
+  Description: 'A modern textile business website showcasing textile products and services with a responsive design, dynamic features, and efficient backend functionality.',
+  Tech: ['Next.js', 'NestJS', 'TypeScript', 'Tailwind CSS'],
+  url: 'https://www.kstextilepk.com/'
+},
 ]
 
 const FeaturedProjects = () => {
