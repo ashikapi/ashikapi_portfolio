@@ -9,7 +9,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiHtml5 } from "react-icons/si";
-import profile from '../images/AAA.jpeg';
+import profile from '../images/ashik.jpeg';
 
 
 const Home = () => {
@@ -162,7 +162,7 @@ const Home = () => {
                      className="bg-[#1e293b] p-2 rounded-2xl"
                     >
                         <div className='relative group overflow-hidden'>
-                        <img className='sm:w-80 w-60 rounded-xl '
+                        <img className='sm:w-80 w-60 sm:scale-0 scale-150 transform transition-all duration-700 group-hover:scale-200 rounded-xl '
                             // src="https://i.postimg.cc/V6FY2ncF/Ashik-Api.jpg"
                             src={profile}
                             alt="Ashik Api web developer profile picture" />
