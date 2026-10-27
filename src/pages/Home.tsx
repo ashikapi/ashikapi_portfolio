@@ -9,7 +9,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiHtml5 } from "react-icons/si";
-import profile from '../images/ashik.jpeg';
+import profile from '../images/ashik.webp';
 
 
 const Home = () => {
